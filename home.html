@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nadia Jenner – Designer</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+    <meta name="description" content="A little online place for me :)">
+    <meta name="keywords" content=",Nadia, Jenner, Design, Massey, freelance, Wellington, Publication, Rainbow Creative, Porirua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="mobilestylesheet.css" rel="stylesheet" type="text/css" media="(max-width:640px)">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="(min-width:640px)">
+</head>
+
+<body>
+    <main>
+        <div class="screen"></div>
+
+<div class="play-music">
+  <div class="music-toggle"><a onClick="togglePlay()" id="toggle">
+      <img id="volumeiconmute" src="Images/volumeiconmute.svg" alt="turn on music">
+      <img id="volumeiconon" src="Images/volumeiconon.svg" alt="turn off music">
+      </a></div>
+</div>
+<audio id="music" loop="loop" src="Zorba The Greek.mp3"></audio>
+        
+        <div class="contonehome">
+	       <marquee behavior="alternate" direction="down">
+                <marquee behavior="alternate">
+                    <img class="wordmark" src="Images/logo.png">
+               </marquee>
+	       </marquee>        
+        </div>
+        <div class="conttwoback">
+            <div class="conttwoa">
+                <p id="centremenutwo" style="cursor: pointer;" onclick="window.location='bitsy-buddies.html';">Project Spotlight</p>
+            </div>
+            <div class="conttwob">
+                <p id="centremenutwo" style="cursor: pointer;" onclick="window.location='project-select-page.html';">Browse Projects</p>
+            </div>
+            <div class="conttwoc">
+                <p id="centremenutwo" style="cursor: pointer;" onclick="window.location='print-typography-page.html';">Print Typography</p>
+            </div>
+        </div>
+        <div class="conttwo">
+            <p id="centremenuone">Design</p>
+        </div>
+        <div class="contthree" style="cursor: pointer;" onclick="window.location='paintings.html';">
+        <p id="centremenuone">Painting</p>
+            </div>
+        <div class="contfourback">
+            <div class="contfoura">
+                <p id="centremenutwo">Tid-Bits</p>
+            </div>
+            <div class="contfourb"  style="cursor: pointer;" onclick="window.location='liqourice.html';">
+                <p id="centremenutwo">Liquorice Reviews</p>
+            </div>
+        </div>
+        <div class="contfour">
+            <p id="centremenuone">...Mystery</p>
+        </div>
+        <div class="contfive">
+            <p id="centremenutwo">Contact me!</p>
+            <img class="contfiveimg" src="Images/arrow.svg">
+        </div>
+        <div class="contsix">
+            <p id="centremenuthree">Contact me!</p>
+            <img id="profile" src="Images/profile.png">
+            <p id="aboutme">Hiya! Welcome to my website! I’m a Wellington-based designer who loves illustration and editorial typography. Just graduated from Massey University with a Bachelor’s in Visual Communication design with first class honours. Senior designer at Rainbow Creative &#127752; Yeehaw!<br><br>Feel free to reach out!<br><br>nadiajennerdesign@gmail.com<br><img id="twitter" src="Images/twitter.svg">@Nadia__Jenner</p>
+        </div>
+        <div class="background"></div>
+    </main> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    
+    
+    
+$(document).ready(function(){
+  $("div.conttwo").click(function(){
+    $("div.conttwo").css('visibility', 'hidden');
+    $("div.contfour").css('visibility', 'visible');
+  });
+});
+$(document).ready(function(){
+        $("div.contfour").click(function(){
+    $("div.contfour").css('visibility', 'hidden');
+    $("div.conttwo").css('visibility', 'visible');
+  });
+});
+$(document).ready(function(){
+$("div.contonehome").click(function(){
+    $("div.contfour").css('visibility', 'visible');
+    $("div.conttwo").css('visibility', 'visible');
+  });
+});    
+    
+$(document).ready(function(){
+$("div.background").click(function(){
+    $("div.contfour").css('visibility', 'visible');
+    $("div.conttwo").css('visibility', 'visible');
+  });
+});       
+    
+document.querySelector('.contfive').addEventListener('click', function() {
+      document.querySelector('.contfive').classList.toggle('expand');
+      document.querySelector('.contfiveimg').classList.toggle('expand');
+      document.querySelector('.contsix').classList.toggle('expand');
+});
+    
+    
+    var music = document.getElementById("music");
+    var isPlaying = false;
+    music.volume = 0.2;
+    function togglePlay() {
+    if (isPlaying) {
+    music.pause()
+    } else {
+    music.play();
+    }
+    };
+    music.onplaying = function() {
+  isPlaying = true;
+    $("#volumeiconmute").hide();
+    $("#volumeiconon").show();
+    };
+    music.onpause = function() {
+  isPlaying = false;
+    $("#volumeiconmute").show();
+    $("#volumeiconon").hide();
+    };
+</script>
+    </body>
+
+</html>
+
