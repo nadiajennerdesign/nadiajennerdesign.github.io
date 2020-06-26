@@ -24,7 +24,8 @@ a{
     height:41%;
     max-height: 425px;
     background:#ffffff;
-    display:block;
+    display:inline-block;
+    margin-bottom: 40px;
 }
 .contonelic{
     Width:100%;
@@ -38,6 +39,10 @@ a{
     height:41%;
     min-height: 525px;
     background:#ffffff;
+    display:inline-block;
+    margin-bottom: 40px;
+}
+.projectcont{
     display:block;
 }
 #volumeiconon{
