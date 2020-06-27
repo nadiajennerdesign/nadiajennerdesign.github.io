@@ -185,15 +185,14 @@ a{
 .contfiveimg{
     position:relative;
     display:block;
-    width:2.5%;
+    height:22.5%;
     max-width:35px;
     visibility:hidden;
     margin:auto;
   position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-    margin-left:48.75%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contfiveimg.expand{
@@ -203,8 +202,8 @@ a{
 .contsix{
     position:fixed;
     width:35%;
+    min-width:300px;
     height:0%;
-    margin:32.5%;
     margin-bottom:0%;
     border-radius: 25px;
     background:#e6e6e6;
@@ -212,6 +211,8 @@ a{
     bottom:0px;
     transition: all .2s ease;
     z-index:1;
+        left: 50%;
+    transform: translate(-50%, 0%);
 }
 .contsix.expand{
     height:91.7%;
@@ -241,7 +242,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-    font-size: 40%;
+    font-size: 35%;
     overflow: none;
 }
 #twitter{
@@ -270,12 +271,25 @@ a{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-#centremenuthree{
+.centremenuthreea{
     font-size: 60%;
     font-weight:600;
     position: relative;
-    padding: 6%;
     text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centremenuthreeb{
+    font-size: 55%;
+    font-weight:600;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    padding:5%;
+    top: 3%;
+    transform: translate(-50%, -50%);
 }
 
 .logonoborder{
@@ -364,7 +378,7 @@ h2{
     width:35%;
     max-width: 350px;
     color:#333333;
-    font-size: 45%;
+    font-size: 50%;
     text-align: center;
     text-decoration: none;
     height:5%;
