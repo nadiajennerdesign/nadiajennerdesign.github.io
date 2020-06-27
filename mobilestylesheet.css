@@ -256,7 +256,7 @@ a{
 }
 
 #centremenuone{
-    font-size: 130%;
+    font-size: 80%;
     font-weight:650;
     position: absolute;
     left: 50%;
@@ -264,7 +264,7 @@ a{
     transform: translate(-50%, -50%);
 }
 #centremenutwo{
-    font-size: 60%;
+    font-size: 30%;
     font-weight:600;
     position: absolute;
     left: 50%;
