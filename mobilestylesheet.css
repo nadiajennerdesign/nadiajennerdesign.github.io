@@ -2,7 +2,7 @@ html, body, main{
     height:100%;
     width:100%;
     margin:0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size:1.5em;
 }
 
@@ -63,6 +63,46 @@ a{
     min-width:20px;
     max-width:60px;
     cursor: pointer;
+}
+.typefaceapologeticsicon{
+    position:absolute;
+    right:6%;
+    top:16%;
+    width:12%;
+    min-width:22px;
+    max-width:60px;
+    cursor: pointer;
+    z-index: 2;
+}
+.typefaceapologeticstext{
+    position:absolute;
+    opacity:0%;
+    left:350px;
+    top:35px;
+    width:25%;
+    min-width: 350px;
+    transition: all .2s ease;
+    transform:rotate(120deg);
+    z-index:1;
+    color:#333333;
+    font-size: 35%;
+    cursor: pointer;
+    display:inline-block;
+    overflow: auto;
+}
+.typefaceapologeticstext.expand{
+    position:absolute;
+    opacity:100%;
+    left:35px;
+    top:35px;
+    width:25%;
+    transition: all .2s ease;
+    transform:rotate(0deg);
+    z-index:1;
+    color:#333333;
+    font-size: 35%;
+    cursor: pointer;
+    overflow: auto;
 }
 
 .arrowimg{
@@ -238,7 +278,7 @@ a{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 435%;
     padding:3%;
     min-width: 100px;
     max-width: 500px;
@@ -364,8 +404,7 @@ h2{
     font-size: 45%;
     text-align: center;
     text-decoration: none;
-    height:5%;
-    min-height:50px;
+    height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 12%;
@@ -478,7 +517,7 @@ h2{
     float:left;
     display: block;
     margin-left: 4%;
-    margin-bottom:4%;
+    margin-bottom:25%;
     float:clear;
 }
 .linktwo{

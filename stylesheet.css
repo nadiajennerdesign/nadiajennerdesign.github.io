@@ -2,7 +2,7 @@ html, body, main{
     height:100%;
     width:100%;
     margin:0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size:1.5em;
 }
 
@@ -55,7 +55,45 @@ a{
     width:35px;
     cursor: pointer;
 }
-
+.typefaceapologeticsicon{
+    position:absolute;
+    right:25px;
+    top:85px;
+    width:40px;
+    cursor: pointer;
+    z-index: 2;
+}
+.typefaceapologeticstext{
+    position:absolute;
+    opacity:0%;
+    right:25px;
+    top:85px;
+    width:25%;
+    min-width: 350px;
+    transition: all .2s ease;
+    transform:rotate(120deg);
+    z-index:1;
+    color:#333333;
+    font-size: 40%;
+    cursor: pointer;
+    display:inline-block;
+    overflow: auto;
+}
+.typefaceapologeticstext.expand{
+    position:absolute;
+    opacity:100%;
+    right:75px;
+    top:85px;
+    width:25%;
+    min-width: 350px;
+    transition: all .2s ease;
+    transform:rotate(0deg);
+    z-index:1;
+    color:#333333;
+    font-size: 40%;
+    cursor: pointer;
+    overflow: auto;
+}
 .arrowimg{
     position:relative;
     width:40px;
@@ -381,7 +419,7 @@ h2{
     font-size: 50%;
     text-align: center;
     text-decoration: none;
-    height:5%;
+    height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top:35px;
