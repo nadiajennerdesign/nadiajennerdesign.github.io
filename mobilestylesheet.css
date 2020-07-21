@@ -83,7 +83,6 @@ a{
     max-width:350px;
     transition: all .2s ease;
     transform:rotate(180deg);
-    z-index:2;
     color:#333333;
     font-size: 25%;
     cursor: pointer;
