@@ -66,12 +66,12 @@ a{
 .typefaceapologeticstext{
     position:absolute;
     opacity:0%;
-    right:25px;
-    top:85px;
+    right:250px;
+    top:350px;
     width:25%;
     min-width: 350px;
     transition: all .2s ease;
-    transform:rotate(120deg);
+    transform:rotate(180deg);
     z-index:1;
     color:#333333;
     font-size: 40%;
@@ -93,6 +93,13 @@ a{
     font-size: 40%;
     cursor: pointer;
     overflow: auto;
+}
+.typefaceapologeticscover{
+    display:none;
+    z-index: 2;
+    width:100%;
+    height:59%;
+    background-color: #333333;
 }
 .arrowimg{
     position:relative;

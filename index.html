@@ -27,9 +27,10 @@
       </a></div>
 </div>
 <img class="typefaceapologeticsicon" src="Images/typefaceapologeticsicon.svg" alt="typeface apologetics">
-        <div class="typefaceapologeticstext">
+<div class="typefaceapologeticstext">
             <p>Listen up folks, this website is set in Arial. Akzidenz knockoff? Sure. But you know what else is? Helvetica. Arial is the most common typeface on the web (2020), and the most likely to be installed on your device (Monotype has ENSURED they have their fingers in all the pies). Whether or not artistic intent means anything to you, it means I can sleep soundly at night knowing that the text has rendered exactly how I designed it to. Arial does what Univers don't. We're crafting the utopia Paul Renner dreamed of. One typeface, one love, one life. It's Arial babeey.</p>
         </div>
+<div class="typefaceapologeticscover"></div>        
 <audio id="music" loop="loop" src="Zorba The Greek.mp3"></audio>
         
         <div class="contonehome">
@@ -117,7 +118,7 @@ document.querySelector('.contfive').addEventListener('click', function() {
 
 document.querySelector('.typefaceapologeticsicon').addEventListener('click', function() {
     document.querySelector('.typefaceapologeticstext').classList.toggle('expand');
-    
+    document.querySelector('.typefaceapologeticscover').classList.toggle('expand');
 });
     
     var music = document.getElementById("music");
