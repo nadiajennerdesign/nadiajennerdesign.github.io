@@ -54,6 +54,7 @@ a{
     min-width:20px;
     max-width:60px;
     cursor: pointer;
+    z-index: 2;
 }
 #volumeiconmute{
     position:absolute;
@@ -63,6 +64,7 @@ a{
     min-width:20px;
     max-width:60px;
     cursor: pointer;
+    z-index: 2;
 }
 .typefaceapologeticsicon{
     position:absolute;
@@ -237,7 +239,7 @@ a{
     background:#e6e6e6;
     color:#333333;
     bottom:33.4%;
-    z-index:2;
+    z-index:3;
     cursor:pointer;
 }
 .contfive.expand{
@@ -247,7 +249,7 @@ a{
     background:#e6e6e6;
     color:#e6e6e6;
     bottom:33.4%;
-    z-index:2
+    z-index:3;
 }
 .contfiveimg{
     position:relative;
@@ -277,7 +279,7 @@ a{
     color:#333333;
     bottom:0px;
     transition: all .2s ease;
-    z-index:1;
+    z-index:2;
 }
 .contsix.expand{
     height:91.7%;
@@ -309,7 +311,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-    font-size: 5vw;
+    font-size: 2vh;
 }
 #twitter{
     position:relative;
