@@ -4,6 +4,7 @@ html, body, main{
     margin:0;
     font-family: 'Arial', sans-serif;
     font-size:1.5em;
+    color: #4d4d4d;
 }
 
 * {margin: 0; padding: 0;}
@@ -11,6 +12,15 @@ html, body, main{
 
 a{
     display:block;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5vh;
 }
 
 .contonehome{
@@ -88,11 +98,12 @@ a{
     color:#333333;
     font-size: 25%;
     cursor: pointer;
-    display:inline-block;
+    display: none;
     overflow: auto;
 }
 .typefaceapologeticstext.expand{
     position:absolute;
+    display:inline;
     opacity:100%;
     left:35px;
     top:35px;
@@ -520,7 +531,7 @@ h2{
     font-size: 5.5vw;
     width: 85%;
     color: #ffffff;
-    font-weight: 1000;    
+    font-weight: 600;    
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -563,8 +574,53 @@ h2{
     font-size: 5.5vw;
     width: 85%;
     color: #ffffff;
-    font-weight: 1000;    
+    font-weight: 600;    
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.footer{
+    position: absolute;
+    bottom:0;
+    font-size: 1.75vh;
+    text-align: right;
+    width:100%;
+    height:5vh;
+    background-color:#fffdf0;
+}
+.footer::before{
+    position:absolute;
+    content:' ';
+    width:100%;
+    left:0px;
+    height:3px;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88%, rgba(246,172,13,1) 100%);
+}
+#footertext{
+    position:relative;
+    margin-right:8%;
+    top:1.5vh;
+}
+
+
+.paintingfooter{
+    position: absolute;
+    bottom:0;
+    font-size: 1.75vh;
+    text-align: right;
+    width:100%;
+    height:5vh;
+    background-color:#fffdf0;
+}
+.paintingfooter::before{
+    position:absolute;
+    content:' ';
+    width:100%;
+    left:0px;
+    height:3px;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88%, rgba(246,172,13,1) 100%);
 }
