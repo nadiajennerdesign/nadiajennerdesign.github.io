@@ -201,7 +201,6 @@ a{
     cursor:pointer;
     }
 .contfoura{
-    display: none;
     position:relative;
     Width:100%;
     height:50%;
@@ -212,7 +211,7 @@ a{
 .contfourb{
     position:relative;
     Width:100%;
-    height:100%;
+    height:50%;
     background:#a60234;
     color:#f6ba0d;
     cursor:pointer;
