@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="mobilestylesheet.css" rel="stylesheet" type="text/css" media="(max-width:640px)">
     <link href="stylesheet.css" rel="stylesheet" type="text/css" media="(min-width:640px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class='index'>
     <main>
         <div class="screen"></div>
 
@@ -80,70 +81,8 @@
         </div>
         <div class="background"></div>
     </main> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    
-    
-    
-$(document).ready(function(){
-  $("div.conttwo").click(function(){
-    $("div.conttwo").css('visibility', 'hidden');
-    $("div.contfour").css('visibility', 'visible');
-  });
-});
-$(document).ready(function(){
-        $("div.contfour").click(function(){
-    $("div.contfour").css('visibility', 'hidden');
-    $("div.conttwo").css('visibility', 'visible');
-  });
-});
-$(document).ready(function(){
-$("div.contonehome").click(function(){
-    $("div.contfour").css('visibility', 'visible');
-    $("div.conttwo").css('visibility', 'visible');
-  });
-});    
-    
-$(document).ready(function(){
-$("div.background").click(function(){
-    $("div.contfour").css('visibility', 'visible');
-    $("div.conttwo").css('visibility', 'visible');
-  });
-});       
-    
-document.querySelector('.contfive').addEventListener('click', function() {
-      document.querySelector('.contfive').classList.toggle('expand');
-      document.querySelector('.contfiveimg').classList.toggle('expand');
-      document.querySelector('.contsix').classList.toggle('expand');
-});
-
-document.querySelector('.typefaceapologeticsicon').addEventListener('click', function() {
-    document.querySelector('.typefaceapologeticstext').classList.toggle('expand');
-    document.querySelector('.typefaceapologeticscover').classList.toggle('expand');
-});
-    
-    var music = document.getElementById("music");
-    var isPlaying = false;
-    music.volume = 0.2;
-    function togglePlay() {
-    if (isPlaying) {
-    music.pause()
-    } else {
-    music.play();
-    }
-    };
-    music.onplaying = function() {
-  isPlaying = true;
-    $("#volumeiconmute").hide();
-    $("#volumeiconon").show();
-    };
-    music.onpause = function() {
-  isPlaying = false;
-    $("#volumeiconmute").show();
-    $("#volumeiconon").hide();
-    };
-</script>
-    </body>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
 
 </html>
 

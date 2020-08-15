@@ -606,7 +606,6 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
 
 
 .paintingfooter{
-    position: absolute;
     bottom:0;
     font-size: 1.75vh;
     text-align: right;
