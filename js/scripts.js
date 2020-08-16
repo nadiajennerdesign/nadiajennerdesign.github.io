@@ -54,7 +54,6 @@ $("#volumeiconon").hide();
 };
 
 if (document.body.classList.contains('paintings')) {var colour="#33de22";} 
-else if (document.body.classList.contains('index')) { var colour="#de3333";}
 else if (document.body.classList.contains('printtype')) { var colour="#de3333";}
 else if (document.body.classList.contains('herve')) { var colour="#e8d36c";}
 else if (document.body.classList.contains('typology')) { var colour="#ef9bbd";}
@@ -69,8 +68,6 @@ else if (document.body.classList.contains('rainace')) { var colour="#92add1";}
 else if (document.body.classList.contains('sunshots')) { var colour="#ed8f71";}
 else if (document.body.classList.contains('truenorth')) { var colour="#c35758";}
 else if (document.body.classList.contains('youngguns')) { var colour="#FF6699";}
-
-
 
 var sparkles=50;
 var x=ox=400;
