@@ -53,14 +53,15 @@ $("#volumeiconmute").show();
 $("#volumeiconon").hide();
 };
 
-if (document.body.classList.contains('paintings')) {var colour="#33de22";} 
-else if (document.body.classList.contains('printtype')) { var colour="#de3333";}
+if (document.body.classList.contains('paintings')) {var colour="#ef9bbd";} 
+else if (document.body.classList.contains('printtype')) { var colour="#e6e6e6";}
+else if (document.body.classList.contains('index')) { var colour="#e6e6e6";}
 else if (document.body.classList.contains('herve')) { var colour="#e8d36c";}
 else if (document.body.classList.contains('typology')) { var colour="#ef9bbd";}
 else if (document.body.classList.contains('liquorice')) { var colour="#000000";}
-else if (document.body.classList.contains('poemscraps')) { var colour="#4e87a2";}
+else if (document.body.classList.contains('poemscraps')) { var colour="#e6e6e6";}
 else if (document.body.classList.contains('bitsy')) { var colour="#9fc5a5";}
-else if (document.body.classList.contains('projectselect')) { var colour="#333333";}
+else if (document.body.classList.contains('projectselect')) { var colour="#e6e6e6";}
 else if (document.body.classList.contains('department')) { var colour="#7f7ea1";}
 else if (document.body.classList.contains('gumdrop')) { var colour="#cc8f9f";}
 else if (document.body.classList.contains('paracetamol')) { var colour="#8baecd";}

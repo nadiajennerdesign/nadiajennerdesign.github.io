@@ -169,8 +169,6 @@ a{
     cursor:pointer;
 }
 
-
-
 .contthree{
     position:relative;
     display: block;
@@ -492,8 +490,9 @@ h2{
 }
 
 .allprojects{
-    position:absolute; 
+    position:absolute;
     width:90%;
+    margin-top:10%;
     margin-bottom:60px;
     margin-left: 10%;
     margin-right: auto;
@@ -601,13 +600,15 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
 }
 #footertext{
     position:relative;
+    display:inline-block;
     margin-right:6vh;
     top:1.5vh;
 }
 
 #pcontent-wrap {
   padding-bottom: 5vh;
-  display: table-row;
+  display: inline-block;
+  width:100%;
   height: 95%;
 }
 .paintingfooter{
