@@ -82,7 +82,7 @@ a{
     min-width: 350px;
     transition: all .2s ease;
     transform:rotate(180deg);
-    z-index:1;
+    z-index:-3;
     color:#333333;
     font-size: 40%;
     cursor: pointer;
@@ -425,6 +425,22 @@ h2{
     transform: translateX(6px);
     box-shadow: 3px 3px #d1d3d4, 6px 6px #bcbec0, 9px 9px #d1d3d4;}
 .randombutton{
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    width:35%;
+    max-width: 350px;
+    color:#333333;
+    font-size: 50%;
+    text-align: center;
+    text-decoration: none;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:35px;
+    line-height: 180%;
+    
+}
+.overlaybutton{
     border-radius: 25px;
     background-color: #e6e6e6;
     width:35%;
