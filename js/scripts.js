@@ -55,11 +55,34 @@
     }
 
     if (document.body.classList.contains('poemscraps')){
-        document.querySelector('.overlaybutton').addEventListener('click', function() {
-            document.querySelector('.overlay').classList.toggle('expand');
-        });
-    }
+        
+        document.querySelector('.overlaybuttonone').addEventListener('click', function() {
+            document.querySelector('.overlayone').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
 
+        });
+        
+        document.querySelector('.overlaybuttontwo').addEventListener('click', function() {
+            document.querySelector('.overlaytwo').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+
+        });
+        
+        document.querySelector('.overlayexitone').addEventListener('click', function() {
+            document.querySelector('.overlayone').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+        });
+        
+        document.querySelector('.overlayexittwo').addEventListener('click', function() {
+            document.querySelector('.overlaytwo').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+        });
+            
+    }
 
 
     if (document.body.classList.contains('paintings')) {var colour="#ef9bbd";} 
@@ -68,7 +91,7 @@
     else if (document.body.classList.contains('herve')) { var colour="#e8d36c";}
     else if (document.body.classList.contains('typology')) { var colour="#ef9bbd";}
     else if (document.body.classList.contains('liquorice')) { var colour="#000000";}
-    else if (document.body.classList.contains('poemscraps')) { var colour="#e6e6e6";}
+    else if (document.body.classList.contains('poemscraps')) { var colour="#ff7e00";}
     else if (document.body.classList.contains('bitsy')) { var colour="#9fc5a5";}
     else if (document.body.classList.contains('projectselect')) { var colour="#e6e6e6";}
     else if (document.body.classList.contains('department')) { var colour="#7f7ea1";}

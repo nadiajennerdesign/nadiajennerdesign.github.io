@@ -440,6 +440,7 @@ h2{
     line-height: 250%;
     margin-bottom:20px;
 }
+
 .overlaybutton{
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -455,6 +456,26 @@ h2{
     margin-top:35px;
     line-height: 180%;
     
+}
+#overlayone #overlaytwo{
+    display:visible;
+    width:100%;
+    opacity:35%;
+    background:#ffffff;
+}
+#overlayone.expand #overlaytwo.expand{
+    display:none
+    width:100%;
+    opacity:35%;
+    background:#ffffff;
+}
+.overlayexit{
+    width:40px;
+    float:right;
+}
+.poemimage{
+    height:calc(100%-80px);
+    float:right;
 }
 
 .projectimagegreen{
