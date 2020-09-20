@@ -123,8 +123,18 @@ a{
 .arrowlink{
     display: inline;
 }
+
 .wordmark{
     width:400px;
+    position: relative;
+    animation: moveX 3.5s linear 0s infinite alternate, 
+               moveY 3s linear 0s infinite alternate;
+}
+@keyframes moveY {
+  from { top: 0; } to { top: calc(100% - 107px); }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 400px); }
 }
 
 .conttwo{
@@ -247,15 +257,13 @@ a{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .contfiveimg.expand{
     visibility:visible;
 }
 
 .contsix{
     position:fixed;
-    width:35%;
-    min-width:300px;
+    width:400px;
     height:0%;
     margin-bottom:0%;
     border-radius: 25px;
@@ -264,8 +272,7 @@ a{
     bottom:0px;
     transition: all .2s ease;
     z-index:1;
-        left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(calc(50vw - 200px),0px);
 }
 .contsix.expand{
     height:91.7%;
@@ -500,9 +507,10 @@ h2{
 .poemimage{
     position:absolute;
     top:50%;
-    left:37.5%;
-    width:25%;
+    left:40%;
+    width:20%;
     opacity:100%;
+    overflow:hidden;
 }
 
 .projectimagegreen{
@@ -667,6 +675,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
     display:inline-block;
     margin-right:6vh;
     top:1.5vh;
+    font-size: 1vw;
 }
 
 #pcontent-wrap {

@@ -148,8 +148,18 @@ a{
 .arrowlink{
     display: inline;
 }
+
 .wordmark{
     width:250px;
+    position: relative;
+    animation: moveX 3.5s linear 0s infinite alternate, 
+               moveY 3s linear 0s infinite alternate;
+}
+@keyframes moveY {
+  from { top: 0; } to { top: calc(100% - 107px); }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 400px); }
 }
 
 .conttwo{
@@ -362,7 +372,7 @@ a{
     position: relative;
     text-align: center;
     left: 50%;
-    top: 5%;
+    top: 7.5%;
     transform: translate(-50%, -50%);
 }
 
@@ -441,7 +451,25 @@ h2{
     margin-bottom:20px;
 }
 
-.overlaybutton{
+.overlaybuttonone, .overlaybuttontwo{
+    position:relative;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    width:45%;
+    max-width: 350px;
+    color:#333333;
+    font-size: 1.5vh;
+    text-align: center;
+    text-decoration: none;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15%;
+    line-height: 250%;
+    z-index: 4;
+}
+.overlaybuttonone.expand, .overlaybuttontwo.expand{
+    position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
     width:35%;
@@ -455,27 +483,38 @@ h2{
     margin-right: auto;
     margin-top:35px;
     line-height: 180%;
-    
+    z-index: 4;
+    visibility:hidden;
 }
-#overlayone #overlaytwo{
-    display:visible;
+.overlayone, .overlaytwo{
+    visibility:hidden;
+    display:relative;
+    position:absolute;
     width:100%;
-    opacity:35%;
+    opacity:100%;
+    background:#333333;
+}
+.overlayone.expand, .overlaytwo.expand{
+    visibility:visible;
+    position:relative;
+    width:100%;
+    opacity:100%;
     background:#ffffff;
 }
-#overlayone.expand #overlaytwo.expand{
-    display:none
-    width:100%;
-    opacity:35%;
-    background:#ffffff;
-}
-.overlayexit{
+.overlayexitone, .overlayexittwo{
+    position:relative;
     width:40px;
-    float:right;
+    top:-50px;
+    transform: rotate(90deg);
+    margin-left:6%;
 }
 .poemimage{
-    height:calc(100%-80px);
-    float:right;
+    position:absolute;
+    top:50%;
+    left:12.5%;
+    width:75%;
+    opacity:100%;
+    overflow:hidden;
 }
 
 .projectimagegreen{
@@ -638,6 +677,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
     position:relative;
     margin-right:8%;
     top:1.5vh;
+    font-size: 3vw;
 }
 
 
