@@ -155,12 +155,13 @@ a{
     animation: moveX 3.5s linear 0s infinite alternate, 
                moveY 3s linear 0s infinite alternate;
 }
-@keyframes moveY {
-  from { top: 0; } to { top: calc(100% - 107px); }
-}
 @keyframes moveX {
-  from { left: 0; } to { left: calc(100% - 400px); }
+  from { left: 0; } to { left: calc(100% - 250px); }
 }
+@keyframes moveY {
+  from { top: 0; } to { top: calc(100% - 67px); }
+}
+
 
 .conttwo{
     position:relative;
