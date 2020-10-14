@@ -403,6 +403,15 @@ h2{
   clear: both;
 }
 
+.logorain{
+    overflow:hidden;
+}
+#world{
+    height:100%;
+    z-index:5;
+}
+
+
 .projectimage{
     display:inline;
     float:left;
@@ -683,6 +692,17 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
   display: inline-block;
   width:100%;
   height: 95%;
+}
+.logorainfooter{
+    position:sticky;
+    font-size: 1.75vh;
+    float:left;
+    bottom:0;
+    text-align: right;
+    width:100%;
+    height:5vh;
+    background-color:#fffdf0;
+    z-index: 100;
 }
 .paintingfooter{
     position: absolute;

@@ -83,7 +83,269 @@
         });
             
     }
+    if (document.body.classList.contains('logorain')){
+                    window.addEventListener('load', function() {
+	
+	//Fetch our canvas
+	var canvas = document.getElementById('world');
 
+	
+	//Setup Matter JS
+	var engine = Matter.Engine.create();
+	var world = engine.world;
+	var render = Matter.Render.create({
+		canvas: canvas,
+		engine: engine,
+		options: {
+			width: window.innerWidth,
+			height: window.innerHeight,
+			background: 'transparent',
+			wireframes: false,
+			showAngleIndicator: false
+		}
+	});
+	
+function percentX(percent) {
+  return Math.round(percent/100 * window.innerWidth);
+}
+function percentY(percent) {
+  return Math.round(percent/100 * window.innerHeight);
+}
+    
+	//Add stuff
+    var logoone = Matter.Bodies.circle(percentX(10), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                width:100,
+                    sprite: {
+                        texture: './Images/logos/logos-01.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logoone);
+    var logotwo = Matter.Bodies.circle(percentX(20), percentY(1), 100,{
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-02.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logotwo);
+    var logothree = Matter.Bodies.circle(percentX(30), percentY(1), 100,{
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-03.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logothree);
+    var logofour = Matter.Bodies.circle(percentX(40), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-04.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logofour);
+    var logofive = Matter.Bodies.circle(percentX(50), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-05.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logofive);
+    var logosix = Matter.Bodies.circle(percentX(60), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-06.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logosix);
+    var logoseven = Matter.Bodies.circle(percentX(70), percentY(1), 100,{
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-07.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logoseven);
+    var logoeight = Matter.Bodies.circle(percentX(80), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-08.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logoeight);
+    var logonine = Matter.Bodies.circle(percentX(90), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-09.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logonine);
+    var logoten = Matter.Bodies.circle(percentX(95), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-10.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logoten);
+    var logoeleven = Matter.Bodies.circle(percentX(15), percentY(1), 100,{
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-11.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logoeleven);
+    var logotwelve = Matter.Bodies.circle(percentX(45), percentY(1), 100, {
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-12.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logotwelve);
+    var logothirteen = Matter.Bodies.circle(percentX(35), percentY(1), 100,{
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-13.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logothirteen);
+    var logofourteen = Matter.Bodies.circle(percentX(75), percentY(1), 100,{
+		density: 0.04,
+		friction: 0.01,
+        frictionAir: 0.00001,
+        restitution: 0.8,
+        render: {
+                    strokeStyle: '#ffffff',
+                    sprite: {
+                        texture: './Images/logos/logos-14.png',
+                    }
+                }
+	});
+	   Matter.World.add(world, logofourteen);
+
+    
+	
+	var floor = Matter.Bodies.rectangle(percentX(50), percentY(70), percentX(100), 25, {
+		isStatic: true, //An immovable object
+		render: {
+			visible: false,
+            fillStyle: '#000000'
+		}
+	});
+    Matter.World.add(world, floor);
+    
+    var wallone = Matter.Bodies.rectangle(percentX(0), percentY(50), 25, percentY(100), {
+		isStatic: true, //An immovable object
+		render: {
+			visible: false,
+            fillStyle: '#000000'
+		}
+	});
+	Matter.World.add(world, wallone);
+    
+    var walltwo = Matter.Bodies.rectangle(percentX(100), percentY(50), 25, percentY(100), {
+		isStatic: true, //An immovable object
+		render: {
+			visible: false,
+            fillStyle: '#000000'
+		}
+	});
+	Matter.World.add(world, walltwo);
+	
+    
+    
+	//Make interactive
+	var mouseConstraint = Matter.MouseConstraint.create(engine, { //Create Constraint
+		element: canvas,
+		constraint: {
+			render: {
+	        	visible: false
+	    	},
+	    	stiffness:0.8
+	    }
+	});
+	Matter.World.add(world, mouseConstraint);
+	
+	//Start the engine
+	Matter.Engine.run(engine);
+	Matter.Render.run(render);
+	
+});
+    }
 
     if (document.body.classList.contains('paintings')) {var colour="#ef9bbd";} 
     else if (document.body.classList.contains('printtype')) { var colour="#e6e6e6";}
