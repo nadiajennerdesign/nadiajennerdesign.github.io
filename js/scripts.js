@@ -113,7 +113,7 @@
                       return Math.round(percent/100 * window.innerHeight);
                     }
 
-                    var logoone = Matter.Bodies.circle(percentX(10), percentY(1), 25, {
+                    var logoone = Matter.Bodies.circle(percentX(10), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -127,7 +127,7 @@
                                 }
                     });
                        Matter.World.add(world, logoone);
-                    var logotwo = Matter.Bodies.circle(percentX(20), percentY(1), 25,{
+                    var logotwo = Matter.Bodies.circle(percentX(20), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -140,7 +140,7 @@
                                 }
                     });
                        Matter.World.add(world, logotwo);
-                    var logothree = Matter.Bodies.circle(percentX(30), percentY(1), 25,{
+                    var logothree = Matter.Bodies.circle(percentX(30), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -153,7 +153,7 @@
                                 }
                     });
                        Matter.World.add(world, logothree);
-                    var logofour = Matter.Bodies.circle(percentX(40), percentY(1), 25, {
+                    var logofour = Matter.Bodies.circle(percentX(40), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -166,7 +166,7 @@
                                 }
                     });
                        Matter.World.add(world, logofour);
-                    var logofive = Matter.Bodies.circle(percentX(50), percentY(1), 25, {
+                    var logofive = Matter.Bodies.circle(percentX(50), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -179,7 +179,7 @@
                                 }
                     });
                        Matter.World.add(world, logofive);
-                    var logosix = Matter.Bodies.circle(percentX(60), percentY(1), 25, {
+                    var logosix = Matter.Bodies.circle(percentX(60), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -192,7 +192,7 @@
                                 }
                     });
                        Matter.World.add(world, logosix);
-                    var logoseven = Matter.Bodies.circle(percentX(70), percentY(1), 25,{
+                    var logoseven = Matter.Bodies.circle(percentX(70), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -205,7 +205,7 @@
                                 }
                     });
                        Matter.World.add(world, logoseven);
-                    var logoeight = Matter.Bodies.circle(percentX(80), percentY(1), 25, {
+                    var logoeight = Matter.Bodies.circle(percentX(80), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -218,7 +218,7 @@
                                 }
                     });
                        Matter.World.add(world, logoeight);
-                    var logonine = Matter.Bodies.circle(percentX(90), percentY(1), 25, {
+                    var logonine = Matter.Bodies.circle(percentX(90), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -231,7 +231,7 @@
                                 }
                     });
                        Matter.World.add(world, logonine);
-                    var logoten = Matter.Bodies.circle(percentX(95), percentY(1), 25, {
+                    var logoten = Matter.Bodies.circle(percentX(95), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -244,7 +244,7 @@
                                 }
                     });
                        Matter.World.add(world, logoten);
-                    var logoeleven = Matter.Bodies.circle(percentX(15), percentY(1), 25,{
+                    var logoeleven = Matter.Bodies.circle(percentX(15), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -257,7 +257,7 @@
                                 }
                     });
                        Matter.World.add(world, logoeleven);
-                    var logotwelve = Matter.Bodies.circle(percentX(45), percentY(1), 25, {
+                    var logotwelve = Matter.Bodies.circle(percentX(45), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -270,7 +270,7 @@
                                 }
                     });
                        Matter.World.add(world, logotwelve);
-                    var logothirteen = Matter.Bodies.circle(percentX(35), percentY(1), 25,{
+                    var logothirteen = Matter.Bodies.circle(percentX(35), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -283,7 +283,7 @@
                                 }
                     });
                        Matter.World.add(world, logothirteen);
-                    var logofourteen = Matter.Bodies.circle(percentX(75), percentY(1), 100,{
+                    var logofourteen = Matter.Bodies.circle(percentX(75), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
