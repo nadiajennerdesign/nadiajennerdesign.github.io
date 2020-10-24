@@ -485,6 +485,8 @@ h2{
 #world{
     height:100%;
     z-index:5;
+    position:absolute;
+    bottom:-25%;
 }
 
 .overlaybuttonone, .overlaybuttontwo{
@@ -716,15 +718,16 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
 }
 
 .logorainfooter{
-    position: sticky;
+    position: absolute;
     font-size: 1.75vh;
     float:left;
-    bottom:15px;
+    bottom:0px;
     text-align: right;
     width:100%;
     height:5vh;
     background-color:#fffdf0;
     z-index: 1000;
+    display:block;
 }
 
 .paintingfooter{
@@ -741,11 +744,13 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
     position: absolute;
     font-size: 1.75vh;
     float:left;
-    bottom:-20px;
+    bottom:0px;
     text-align: right;
     width:100%;
     height:5vh;
     background-color:#fffdf0;
+    z-index: -5;
+    display:block;
 }
 .paintingfooter::before{
     position:absolute;
