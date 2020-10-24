@@ -522,18 +522,17 @@ h2{
     margin-top:35px;
     line-height: 180%;
     z-index: 4;
-    visibility:hidden;
+    display:none;
 }
 .overlayone, .overlaytwo{
-    visibility:hidden;
-    display:relative;
+    display:none;
     position:absolute;
     width:100%;
     opacity:100%;
     background:#333333;
 }
 .overlayone.expand, .overlaytwo.expand{
-    visibility:visible;
+    display:block;
     position:relative;
     width:100%;
     opacity:100%;
