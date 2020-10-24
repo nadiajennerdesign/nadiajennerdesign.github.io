@@ -642,7 +642,8 @@
         var rats=createDiv(5, 5);
         rats.style.backgroundColor="transparent";
         rats.style.visibility="hidden";
-            rats.style.zIndex="999";
+        rats.style.pointerevents="none";
+        rats.style.zIndex="999";
         var rlef=createDiv(1, 5);
         var rdow=createDiv(5, 1);
         rats.appendChild(rlef);

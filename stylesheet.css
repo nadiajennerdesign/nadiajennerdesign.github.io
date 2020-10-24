@@ -3,7 +3,7 @@ html, body, main{
     width:100%;
     margin:0;
     font-family: 'Arial', sans-serif;
-    font-size:1.5em;
+    font-size:1.3em;
     color: #4d4d4d;
 
 }
@@ -13,6 +13,11 @@ html, body, main{
 
 a{
     display:block;
+}
+img{
+    width:75%;
+    margin-left:12.5%;
+    display:flex;
 }
 #page-container {
   position: relative;
@@ -31,8 +36,7 @@ a{
 .contonename{
     Width:100%;
     height:55%;
-    max-height: 450px;
-    background:#ffffff;
+    min-height: 400px;
     display:block;
 }
 
@@ -46,8 +50,7 @@ a{
 .contone{
     Width:100%;
     height:41%;
-    min-height: 425px;
-    min-height: 550px;
+    min-height: 400px;
     background:#ffffff;
     display:block;
 }
@@ -118,14 +121,16 @@ a{
     vertical-align: middle;
     bottom:2px;
     right:8%;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(-25px);
 }
 .arrowlink{
-    display: inline;
+    float:left;
+
 }
 
 .wordmark{
     width:400px;
+    margin-left:0px;
     position: relative;
     animation: moveX 3.5s linear 0s infinite alternate, 
                moveY 3s linear 0s infinite alternate;
@@ -371,6 +376,9 @@ h2{
     padding-left: 6%;
     padding-right: 6%;
 }
+.htwoarrow{
+        transform: translateX(-25px);
+}
 .projecttitle{
     transform: translateX(-15px)
 }
@@ -389,13 +397,10 @@ h2{
     margin-top:4%;
 }    
 .col{
-  float: left;
-  width: 50%;
+
 }
 .projectcont{
-        width:86%;
-    margin-left: 7%;
-    margin-right: 7%;
+        width:100%;
 }
 .projectcont:after{
   content: "";
@@ -413,25 +418,43 @@ h2{
 
 
 .projectimage{
-    display:inline;
+    display:block;
     float:left;
     position:relative;
-    width:65%;
-    margin-left:17.5%;
-    margin-right:17.5%;
+    width:86%;
+    margin-left:7%;
+    margin-right:7%;
     margin-bottom:6%;
-    border-color: #808285;
-    border-width:1px;
-    border-style: solid;
+}
+.projectimage::before{
+    position:absolute;
+    z-index:-5;
+    content:' ';
+    width:60%;
+    margin-left:20%;
+    left:0px;
+    height:25px;
+    transform:translate(0,-23px);
+    border-radius: 25px 25px 0px 0px;
+    background-color: #e6e6e6;
+
 }
 .caption{
+    position:relative;
     display:block;
-    width:55%;
-    margin-left:17.5%;
-    margin-bottom:80px;
+    margin-left:20%;
+    margin-right:20%;
+    padding:4%;
+    margin-bottom:120px;
     font-size:40%;
     font-style: oblique;
+    border-radius: 0 0 25px 25px;
+    transform: translateY(-10px);
+    z-index: -5;
+    background-color: #e6e6e6;
 }
+
+
 .liqouriceimg{
     display:block;
     width:35%;
@@ -522,53 +545,57 @@ h2{
     overflow:hidden;
 }
 
-.projectimagegreen{
-    box-shadow:10px 10px #9fc5a5;
-    border-style:none;
+
+/*
+
+.captiongreen, .projectimagegreen::before{
+        background:#8bd637;
 }
-.projectimagedot{
-    box-shadow:10px 10px #7f7ea1;
+.captiondot, .projectimagedot::before{
+        background:#6e69ff;
 }
-.projectimagegumdrop{
-    box-shadow:10px 10px #cc8f9f;
-    border-style:none;
+.captiongumdrop, .projectimagegumdrop::before{
+        background:#ff4576;
 }
-.projectimagepara{
-    box-shadow:10px 10px #8baecd;
+.captionpara, .projectimagepara::before{
+        background:#66b7ff;
 }
-.projectimagerainace{
-    box-shadow:10px 10px #92add1;
+.captionrainace, .projectimagerainace::before{
+        background:#579fff;
 }
-.projectimagesunshots{
-    box-shadow:10px 10px #ed8f71;
+.captionsunshots, .projectimagesunshots::before{
+        background:#ff5d29;
 }
-.projectimagetruenorth{
-    box-shadow:10px 10px #c35758;
+.captiontruenorth, .projectimagetruenorth::before{
+        background:#ff2b2d;
 }
-.projectimagetypology{
-    box-shadow:10px 10px #ef9bbd;
-    border-style:none;
+.captionyoungguns, .projectimageyoungguns::before{
+        background:#fcba03;
+    color:#FFFFFF;
 }
-.projectimageherve{
-    box-shadow:10px 10px #e8d36c;
-    border-style:none;
+.captiontypology, .projectimagetypology::before{
+        background:#FF6699;
 }
-.projectimageembers{
-    box-shadow:10px 10px #ec4b32;
-    border-style:none;
+.captionherve, .projectimageherve::before{
+        background:#fff200;
 }
-.projectimagesilver{
-    box-shadow:10px 10px #4e87a2;
-    border-style:none;
+.captionembers, .projectimageembers::before{
+        background:#ec4b32;
 }
-.projectimagerose{
-    box-shadow:10px 10px #fbaab2;
-    border-style:none;
+.captionsilver, .projectimagesilver::before{
+        background:#747eff;
 }
-.projectimagewave{
-    box-shadow:10px 10px #8087a7;
-    border-style:none;
+.captionrose, .projectimagerose::before{
+        background:#ff78ab;
 }
+.captionwave, .projectimagewave::before{
+        background:#8bd637;
+}
+
+*/
+
+
+
 
 .allprojects{
     position:absolute;
@@ -596,7 +623,7 @@ h2{
     display:block;
     width:100%;
     border-radius: 25px;
-    
+    margin-left:0%;
 }
 .projectlink{
     position: absolute;

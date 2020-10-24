@@ -3,7 +3,7 @@ html, body, main{
     width:100%;
     margin:0;
     font-family: 'Arial', sans-serif;
-    font-size:1.5em;
+    font-size:1.3em;
     color: #4d4d4d;
 }
 
@@ -12,6 +12,10 @@ html, body, main{
 
 a{
     display:block;
+}
+img{
+    width:100%;
+    display:flex;
 }
 
 #page-container {
@@ -139,6 +143,7 @@ a{
 
 .arrowimg{
     position:relative;
+    display:inline;
     width:40px;
     vertical-align: middle;
     bottom:2px;
@@ -385,6 +390,7 @@ a{
     margin-left:auto;
     margin-right:auto;
     padding-top:12px;
+    margin-bottom:40px;
 }
 h2{
     display:block;
@@ -404,29 +410,41 @@ h2{
 .description{
     display:block;
     text-align: center;
+    margin-bottom:5vh;
     width:80%;
     font-size:40%;
     color:#4d4d4d;
     margin-left:auto;
     margin-right:auto;
-    margin-top:8%;
-}    
+    margin-top:5vh;
+} 
+
 .projectimage{
     display:block;
-    width:86%;
-    margin-left:6%;
-    margin-right:8%;
+    width:100%;
     margin-bottom:6%;
-    border-color: #808285;
-    border-width:1px;
-    border-style: solid;
 }
+.projectimage::before{
+    position:absolute;
+    content:' ';
+    width:86%;
+    margin-left:7%;
+    left:0px;
+    height:25px;
+    z-index:-100;
+    transform:translate(0,-24px);
+    border-radius: 25px 25px 0px 0px;
+}
+
 .caption{
     display:block;
-    margin-left:6%;
-    margin-bottom:80px;
+    margin-left:7%;
+    margin-right:7%;
+    padding:4%;
+    margin-bottom:120px;
     font-size:40%;
     font-style: oblique;
+    border-radius: 0 0 25px 25px;
 }
 .liqouriceimg{
     display:block;
@@ -527,55 +545,47 @@ h2{
     overflow:hidden;
 }
 
-.projectimagegreen{
-    box-shadow:10px 10px #9fc5a5;
-    border-style:none;
+.captiongreen, .projectimagegreen::before{
+        background:#8bd637;
 }
-.projectimagedot{
-    box-shadow:10px 10px #7f7ea1;
+.captiondot, .projectimagedot::before{
+        background:#6e69ff;
 }
-.projectimagegumdrop{
-    box-shadow:10px 10px #cc8f9f;
-    border-style:none;
+.captiongumdrop, .projectimagegumdrop::before{
+        background:#ff4576;
 }
-.projectimagepara{
-    box-shadow:10px 10px #8baecd;
+.captionpara, .projectimagepara::before{
+        background:#66b7ff;
 }
-.projectimagerainace{
-    box-shadow:10px 10px #92add1;
+.captionrainace, .projectimagerainace::before{
+        background:#579fff;
 }
-.projectimagesunshots{
-    box-shadow:10px 10px #ed8f71;
+.captionsunshots, .projectimagesunshots::before{
+        background:#ff5d29;
 }
-.projectimagetruenorth{
-    box-shadow:10px 10px #c35758;
+.captiontruenorth, .projectimagetruenorth::before{
+        background:#ff2b2d;
 }
-.projectimagetruenorth{
-    box-shadow:10px 10px #ebac5c;
+.captionyoungguns, .projectimageyoungguns::before{
+        background:#fcba03;
 }
-.projectimagetypology{
-    box-shadow:10px 10px #ef9bbd;
-    border-style:none;
+.captiontypology, .projectimagetypology::before{
+        background:#FF6699;
 }
-.projectimageherve{
-    box-shadow:10px 10px #e8d36c;
-    border-style:none;
+.captionherve, .projectimageherve::before{
+        background:#fff200;
 }
-.projectimageembers{
-    box-shadow:10px 10px #ec4b32;
-    border-style:none;
+.captionembers, .projectimageembers::before{
+        /*background:#ec4b32;*/
 }
-.projectimagesilver{
-    box-shadow:10px 10px #4e87a2;
-    border-style:none;
+.captionsilver, .projectimagesilver::before{
+        /*background:#747eff;*/
 }
-.projectimagerose{
-    box-shadow:10px 10px #fbaab2;
-    border-style:none;
+.captionrose, .projectimagerose::before{
+        /*background:#ff78ab;*/
 }
-.projectimagewave{
-    box-shadow:10px 10px #8087a7;
-    border-style:none;
+.captionwave, .projectimagewave::before{
+        /*background:#8bd637;*/
 }
 
 .allprojects{
