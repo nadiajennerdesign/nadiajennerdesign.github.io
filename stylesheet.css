@@ -481,7 +481,6 @@ h2{
     margin-left:auto;
     margin-right:auto;
     margin-bottom:4%;
-    transform: translateX(6px);
     box-shadow: 3px 3px #d1d3d4, 6px 6px #bcbec0, 9px 9px #d1d3d4;}
 .randombutton{
     border-radius: 25px;
@@ -723,7 +722,7 @@ h2{
     height:4.25vh;
     background-color:#fffdf0;
 }
-.footer::before{
+.footer::before, .logorainfooter::before, .poemfooter::before{
     position:absolute;
     content:' ';
     width:100%;
@@ -757,7 +756,16 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
     background-color:#fffdf0;
     z-index: 1000;
 }
-
+.poemfooter{
+    position: absolute;
+    font-size: 1.75vh;
+    float:left;
+    bottom:-20px;
+    text-align: right;
+    width:100%;
+    height:5vh;
+    background-color:#fffdf0;
+}
 .paintingfooter{
     position: absolute;
     font-size: 1.75vh;

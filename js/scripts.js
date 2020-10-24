@@ -585,8 +585,10 @@
                             stiffness:0.8
                         }
                     });
+                    
                     Matter.World.add(world, mouseConstraint);
-
+mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
+mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
                     Matter.Engine.run(engine);
                     Matter.Render.run(render);
                 });

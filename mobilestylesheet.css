@@ -461,7 +461,6 @@ h2{
     margin-left:auto;
     margin-right:auto;
     margin-bottom:6%;
-    transform: translateX(6px);
     box-shadow: 3px 3px #d1d3d4, 6px 6px #bcbec0, 9px 9px #d1d3d4;}
 .randombutton{
     border-radius: 25px;
@@ -469,7 +468,7 @@ h2{
     width:45%;
     min-width:180px;
     color:#333333;
-    font-size: 2vh;
+    font-size: 3vh;
     text-align: center;
     text-decoration: none;
     height:50px;
@@ -495,7 +494,7 @@ h2{
     width:45%;
     max-width: 350px;
     color:#333333;
-    font-size: 2vh;
+    font-size: 3vh;
     text-align: center;
     text-decoration: none;
     height:50px;
