@@ -756,7 +756,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
     visibility: hidden;
 }
 .poemscraps{
-    overflow:none;
+    overflow:hidden;
 }
 .paintingfooter::before{
     position:absolute;
