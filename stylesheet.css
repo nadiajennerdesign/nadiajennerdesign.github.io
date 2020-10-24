@@ -428,6 +428,17 @@ h2{
     margin-right:7%;
     margin-bottom:6%;
 }
+
+.projectimagesilver, .projectimageembers, .projectimagerose, .projectimagewave{
+    display: block;
+        top:50%;
+    left:40%;
+    width:35%;
+        float:none;
+    position:relative;
+    margin-left: 0px;
+    transform: translate(-20%)
+}
 .projectimage::before{
     position:absolute;
     z-index:-5;
@@ -439,6 +450,10 @@ h2{
     transform:translate(0,-23px);
     border-radius: 25px 25px 0px 0px;
     background-color: #e6e6e6;
+
+}
+.projectimagesilver::before, .projectimageembers::before, .projectimagerose::before, .projectimagewave::before{
+        background-color: #FFFFFF;
 
 }
 .caption{
@@ -455,7 +470,9 @@ h2{
     z-index: -5;
     background-color: #e6e6e6;
 }
-
+.captionsilver, .captionembers, .captionrose, .captionwave{
+    background-color: #FFFFFF;
+}
 
 .liqouriceimg{
     display:block;
@@ -644,6 +661,9 @@ h2{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.dotlink{
+    font-size:0.9vw;
 }
 
 .allprojectstwo{
