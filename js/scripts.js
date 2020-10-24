@@ -60,26 +60,28 @@
             document.querySelector('.overlayone').classList.toggle('expand');
             document.querySelector('.overlaybuttonone').classList.toggle('expand');
             document.querySelector('.overlaybuttontwo').classList.toggle('expand');
-
+            document.querySelector('.poemfooter').classList.toggle('expand');
         });
         
         document.querySelector('.overlaybuttontwo').addEventListener('click', function() {
             document.querySelector('.overlaytwo').classList.toggle('expand');
             document.querySelector('.overlaybuttontwo').classList.toggle('expand');
             document.querySelector('.overlaybuttonone').classList.toggle('expand');
-
+            document.querySelector('.poemfooter').classList.toggle('expand');
         });
         
         document.querySelector('.overlayexitone').addEventListener('click', function() {
             document.querySelector('.overlayone').classList.toggle('expand');
             document.querySelector('.overlaybuttonone').classList.toggle('expand');
             document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.poemfooter').classList.toggle('expand');
         });
         
         document.querySelector('.overlayexittwo').addEventListener('click', function() {
             document.querySelector('.overlaytwo').classList.toggle('expand');
             document.querySelector('.overlaybuttonone').classList.toggle('expand');
             document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.poemfooter').classList.toggle('expand');
         });
             
     }
