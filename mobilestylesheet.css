@@ -144,7 +144,7 @@ img{
 .arrowimg{
     position:relative;
     display:inline;
-    width:40px;
+    width:35px;
     vertical-align: middle;
     bottom:2px;
     right:8%;
@@ -345,6 +345,8 @@ img{
     vertical-align: bottom;
     bottom:2px;
     margin-right:5px;
+    margin-left:0px;
+    display:inline;
 }
 
 #centremenuone{
@@ -460,14 +462,14 @@ h2{
     width:45%;
     min-width:180px;
     color:#333333;
-    font-size: 3.5vh;
+    font-size: 2vh;
     text-align: center;
     text-decoration: none;
     height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20%;
-    line-height: 250%;
+    line-height: 50px;
     margin-bottom:20px;
 }
 
@@ -486,14 +488,14 @@ h2{
     width:45%;
     max-width: 350px;
     color:#333333;
-    font-size: 3.5vh;
+    font-size: 2vh;
     text-align: center;
     text-decoration: none;
     height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top:15%;
-    line-height: 250%;
+    line-height: 50px;
     z-index: 4;
 }
 .overlaybuttonone.expand, .overlaybuttontwo.expand{
@@ -531,8 +533,8 @@ h2{
 }
 .overlayexitone, .overlayexittwo{
     position:relative;
-    width:40px;
-    top:-50px;
+    width:35px;
+    top:-72.5px;
     transform: rotate(90deg);
     margin-left:6%;
 }
@@ -543,8 +545,11 @@ h2{
     width:75%;
     opacity:100%;
     overflow:hidden;
+    margin-left:0px;
+    display:block;
 }
 
+/*
 .captiongreen, .projectimagegreen::before{
         background:#8bd637;
 }
@@ -576,17 +581,18 @@ h2{
         background:#fff200;
 }
 .captionembers, .projectimageembers::before{
-        /*background:#ec4b32;*/
+        background:#ec4b32;
 }
 .captionsilver, .projectimagesilver::before{
-        /*background:#747eff;*/
+        background:#747eff;*
 }
 .captionrose, .projectimagerose::before{
-        /*background:#ff78ab;*/
+        background:#ff78ab;
 }
 .captionwave, .projectimagewave::before{
-        /*background:#8bd637;*/
+        background:#8bd637;
 }
+*/
 
 .allprojects{
     height:69%;
@@ -629,6 +635,9 @@ h2{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.dotlink{
+    font-size:0.8vw;
 }
 
 .allprojectstwo{
@@ -684,7 +693,7 @@ h2{
     height:7vh;
     background-color:#fffdf0;
 }
-.footer::before{
+.footer::before, .logorainfooter::before, .poemfooter::before{
     position:absolute;
     content:' ';
     width:100%;
@@ -701,19 +710,32 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
 }
 
 .logorainfooter{
-    position:sticky;
+    position: sticky;
     font-size: 1.75vh;
     float:left;
-    bottom:0;
+    bottom:15px;
     text-align: right;
     width:100%;
     height:5vh;
     background-color:#fffdf0;
     z-index: 1000;
 }
+
 .paintingfooter{
-    bottom:0;
+    position: relative;
     font-size: 1.75vh;
+    float:left;
+    bottom:15px;
+    text-align: right;
+    width:100%;
+    height:5vh;
+    background-color:#fffdf0;
+}
+.poemfooter{
+    position: absolute;
+    font-size: 1.75vh;
+    float:left;
+    bottom:-20px;
     text-align: right;
     width:100%;
     height:5vh;

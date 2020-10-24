@@ -117,7 +117,7 @@ img{
 }
 .arrowimg{
     position:relative;
-    width:40px;
+    width:35px;
     vertical-align: middle;
     bottom:2px;
     right:8%;
@@ -316,6 +316,8 @@ img{
     vertical-align: bottom;
     bottom:2px;
     margin-right:5px;
+    margin-left:0px;
+    display:inline;
 }
 
 #centremenuone{
@@ -477,7 +479,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     margin-top:55px;
-    line-height: 180%;
+    line-height: 50px;
     
 }
 
@@ -495,7 +497,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     margin-top:35px;
-    line-height: 180%;
+    line-height: 50px;
     z-index: 4;
 }
 .overlaybuttonone.expand, .overlaybuttontwo.expand{
@@ -535,6 +537,8 @@ h2{
     width:40px;
     transform: rotate(90deg);
     margin-left:30%;
+    top:-82.5px;
+    position:relative;
 }
 .poemimage{
     position:absolute;
@@ -543,6 +547,8 @@ h2{
     width:20%;
     opacity:100%;
     overflow:hidden;
+    margin-left:0px;
+    display:block;
 }
 
 
@@ -721,7 +727,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
   height: 95%;
 }
 .logorainfooter{
-    position:sticky;
+    position: absolute;
     font-size: 1.75vh;
     float:left;
     bottom:0;
@@ -731,6 +737,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
     background-color:#fffdf0;
     z-index: 1000;
 }
+
 .paintingfooter{
     position: absolute;
     font-size: 1.75vh;
