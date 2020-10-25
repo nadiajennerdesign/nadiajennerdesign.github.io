@@ -18,6 +18,7 @@ img{
     width:75%;
     margin-left:12.5%;
     display:flex;
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
 }
 #page-container {
   position: relative;
@@ -60,6 +61,7 @@ img{
     top:25px;
     width:35px;
     cursor: pointer;
+    box-shadow: none;
 }
 #volumeiconmute{
     position:absolute;
@@ -67,6 +69,7 @@ img{
     top:25px;
     width:35px;
     cursor: pointer;
+    box-shadow: none;
 }
 .typefaceapologeticsicon{
     position:absolute;
@@ -75,6 +78,7 @@ img{
     width:40px;
     cursor: pointer;
     z-index: 2;
+    box-shadow: none;
 }
 .typefaceapologeticstext{
     position:absolute;
@@ -121,10 +125,10 @@ img{
     bottom:2px;
     right:8%;
     transform: rotate(90deg) translateY(-25px);
+    box-shadow: none;
 }
 .arrowlink{
     float:left;
-
 }
 
 .wordmark{
@@ -133,6 +137,7 @@ img{
     position: relative;
     animation: moveX 3.5s linear 0s infinite alternate, 
                moveY 3s linear 0s infinite alternate;
+    box-shadow: none;
 }
 @keyframes moveX {
   from { left: 0; } to { left: calc(100% - 400px); }
@@ -296,7 +301,7 @@ img{
   margin-right: auto;
   width: 50%;
     max-width: 350px;
-    
+    box-shadow: none;    
 }
 #aboutme{
   display: block;
@@ -317,6 +322,7 @@ img{
     margin-right:5px;
     margin-left:0px;
     display:inline;
+    box-shadow: none;
 }
 
 #centremenuone{
@@ -365,6 +371,7 @@ img{
     margin-left:auto;
     margin-right:auto;
     padding-top:12px;
+    box-shadow: none;
 }   
 h2{
     display:block;
@@ -422,23 +429,36 @@ h2{
 
 .projectimage{
     display:block;
-    float:left;
     position:relative;
-    width:86%;
-    margin-left:7%;
-    margin-right:7%;
+    width:75%;
+    max-width: 840px;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom:6%;
 }
-
+.projectvideotruenorth{
+    display:block;
+    width:75%;
+    max-width:840px !important;
+    min-height: 315px;
+    height:25vw;
+    margin-left:12.5%;
+    margin-right:12.5%;
+}
 .projectimagesilver, .projectimageembers, .projectimagerose, .projectimagewave{
     display: block;
         top:50%;
-    left:40%;
     width:35%;
+    max-width: 500px;
         float:none;
     position:relative;
-    margin-left: 0px;
-    transform: translate(-20%)
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+}
+.noboxshadow{
+        box-shadow: none;
+
 }
 .projectimage::before{
     position:absolute;
@@ -482,7 +502,9 @@ h2{
     margin-left:auto;
     margin-right:auto;
     margin-bottom:4%;
-    box-shadow: 3px 3px #d1d3d4, 6px 6px #bcbec0, 9px 9px #d1d3d4;}
+    box-shadow: 3px 3px #d1d3d4, 6px 6px #bcbec0, 9px 9px #d1d3d4;
+    box-shadow: none;
+}
 .randombutton{
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -555,6 +577,7 @@ h2{
     margin-left:30%;
     top:-82.5px;
     position:relative;
+    box-shadow: none;
 }
 .poemimage{
     position:absolute;
@@ -565,6 +588,7 @@ h2{
     overflow:hidden;
     margin-left:0px;
     display:block;
+    box-shadow: none;
 }
 
 
