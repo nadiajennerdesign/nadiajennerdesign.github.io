@@ -1,5 +1,10 @@
     if (document.body.classList.contains('index')){
        
+        document.querySelector('.disclaimerexit').addEventListener('click', function() {
+                  document.querySelector('.disclaimer').classList.toggle('expand');
+                  document.querySelector('.disclaimerblur').classList.toggle('expand');
+        });
+        
         document.querySelector('.conttwo').addEventListener('click', function(){
             $("div.conttwo").css('visibility', 'hidden');
             $("div.contfour").css('visibility', 'visible');

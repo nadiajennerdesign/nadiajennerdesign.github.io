@@ -28,6 +28,70 @@ img{
   padding-bottom: 5vh;
 }
 
+.disclaimer{
+    position:absolute;
+    top:10%;
+    margin-left: 25%;
+    z-index: 998;
+    opacity: 100%;
+    transition: all .2s ease;
+    width: 50%;
+    padding: 20px;
+    background-color:#ffffff;
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
+    pointer-events:all;
+}
+.disclaimer.expand{
+    position:absolute;
+    top:10%;
+    margin-left: 25%;
+    z-index: 998;
+    opacity: 0%;
+    transition: all .2s ease;
+    width: 50%;
+    padding: 20px;
+    background-color:#ffffff;
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
+    pointer-events:none;
+}
+.disclaimerimage{
+    position:relative;
+    display:block;
+    width:100%;
+    box-shadow: none;
+    margin-left: 0px;
+}
+.disclaimerexit{
+    width:30px;
+    margin-left:100%;
+    top:-50px;
+    right:-50px;
+    position:absolute;
+    display:block;
+    float:left;
+    box-shadow: none;
+}
+.disclaimerparagraph{
+    position:relative;
+    display:inline-block;
+    top:20px;
+    padding-bottom: 25px;
+    width:66%;
+    margin-left:34%;
+    text-align: right;
+    font-size:40%;
+}
+.disclaimerblur{
+    transition: all .2s ease;
+    filter: grayscale(1)  blur(15px); 
+    height:100%;
+    pointer-events: none;
+}
+.disclaimerblur.expand{
+    filter: grayscale(0) blur(0px);
+    pointer-events:all;
+}
+
 .contonehome{
     Width:100%;
     height:55%;
