@@ -38,6 +38,7 @@ img{
     box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
     pointer-events: all;
     display: block;
+    visibility: visible;
 }
 .disclaimer.expand{
     position:absolute;
@@ -51,6 +52,7 @@ img{
     box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
     pointer-events: none;
     display: none;
+    visibility: hidden;
 }
 .disclaimerimage{
     position:relative;
