@@ -5,7 +5,7 @@ if (localStorage.getItem("hasCodeRunBefore") === null) {
         localStorage.setItem("hasCodeRunBefore", true);
     });
 }
-else{
+else if (document.body.classList.contains('index')){
         document.querySelector('.disclaimer').classList.toggle('expand');
         document.querySelector('.disclaimerblur').classList.toggle('expand');
 }
