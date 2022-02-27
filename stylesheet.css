@@ -669,6 +669,7 @@ h2{
 .pdfviewermob{
     display:none;
     width:95%;
+    max-width: 2000px;
     margin-bottom:6%;
     margin-left:2.5%;
 }
