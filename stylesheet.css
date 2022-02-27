@@ -658,6 +658,14 @@ h2{
     box-shadow: none;
 }
 
+.pdfveiwer{
+        display:block;
+    position:relative;
+    max-width: 840px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:6%;
+}
 
 /*
 
