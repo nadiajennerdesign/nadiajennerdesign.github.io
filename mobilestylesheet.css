@@ -631,9 +631,9 @@ h2{
 
 .pdfveiwer{
     display:block;
-    width:100%;
+    width:95%;
     margin-bottom:6%;
-    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);}
+}
 
 /*
 .captiongreen, .projectimagegreen::before{
