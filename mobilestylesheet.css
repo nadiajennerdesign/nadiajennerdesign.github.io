@@ -656,6 +656,7 @@ h2{
 
 .containerrow{
     display: grid;
+    position:absolute;
 }
 .layerone, .layertwo{
   grid-column: 1;
