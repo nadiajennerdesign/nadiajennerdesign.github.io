@@ -629,7 +629,7 @@ h2{
     display:block;
 }
 
-.pdfveiwerpc{
+.pdfviewerpc{
     display:none;
     position:relative;
     max-width: 840px;
@@ -637,7 +637,7 @@ h2{
     margin-right:auto;
     margin-bottom:6%;
 }
-.pdfveiwermob{
+.pdfviewermob{
     display:block;
     width:95%;
     margin-bottom:6%;
