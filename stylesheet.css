@@ -674,6 +674,26 @@ h2{
     margin-left:2.5%;
 }
 
+.pdfviewerhide{
+    display:block;
+    width:95%;
+    max-width: 2000px;
+    margin-bottom:6%;
+    margin-left:2.5%;
+    font-weight: 700;
+}
+
+.containerrow{
+    display: grid;
+    position:absolute;
+}
+.layerone, .layertwo{
+  grid-column: 1;
+  grid-row: 1;
+}
+.layer2two{
+  background: rgba(255, 0, 0, 0.4);
+}
 
 /*
 
