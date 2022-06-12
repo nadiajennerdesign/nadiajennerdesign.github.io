@@ -799,6 +799,7 @@ if (document.body.classList.contains('index')){
       div.style.position="absolute";
       div.style.height=height+"px";
       div.style.width=width+"px";
+      div.style.pointerEvents="none";
       div.style.overflow="hidden";
       return (div);
     }

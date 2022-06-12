@@ -850,9 +850,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
 #footermargin{
     margin-right:6vh; 
 }
-.strongdate{
-    font-weight: bold;
-}
+
 
 #pcontent-wrap {
   padding-bottom: 5vh;
