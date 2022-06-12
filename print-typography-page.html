@@ -42,9 +42,14 @@
                     </div>
                 </div>
             </div>
-            <div class="paintingfooter"><p id='footertext'>Music: Zorba the Greek by Herb Albert and the Tijuana Brass</p><p id="footertext">Website made by meeeeee &#169; 2021</p> </div>
+            <div class="paintingfooter"><p class='footertext' id="footermargin">Music: Zorba the Greek by Herb Albert and the Tijuana Brass</p><p class="footertext">Website made by meeeeee &#169; &nbsp;<div class="footertext" id="footermargin"><p id="date"></p></div></div>
         </div>
     </main> 
+    <script>
+        n =  new Date();
+        y = n.getFullYear();
+        document.getElementById("date").innerHTML = y;
+    </script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 

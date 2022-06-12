@@ -806,6 +806,7 @@ h2{
 .footer{
     position: absolute;
     bottom:0;
+    padding-left:8%;
     font-size: 4vw;
     text-align: right;
     width:100%;
@@ -821,11 +822,14 @@ h2{
 background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88%, rgba(246,172,13,1) 100%);
 }
-#footertext{
+.footertext{
     position:relative;
-    margin-right:8%;
     top:25%;
     font-size: 70%;
+    float:left;
+}
+#footermargin{
+    margin-right:8%;
 }
 
 .logorainfooter{
