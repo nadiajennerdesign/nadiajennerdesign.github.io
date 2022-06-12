@@ -42,6 +42,7 @@ img{
     pointer-events:all;
     display: block;
     visibility: visible;
+    font-size:40%;
 }
 .disclaimer.expand{
     position:absolute;
