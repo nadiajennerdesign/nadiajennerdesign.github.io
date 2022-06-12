@@ -337,6 +337,7 @@ img{
 }
 .contfiveimg.expand{
     visibility:visible;
+    box-shadow:none;
 }
 
 .contsix{
