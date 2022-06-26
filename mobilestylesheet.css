@@ -672,6 +672,9 @@ h2{
 .captiongreen, .projectimagegreen::before{
         background:#8bd637;
 }
+.captionpink, .projectimagepink::before{
+        background:#FF69B4;
+}
 .captiondot, .projectimagedot::before{
         background:#6e69ff;
 }

@@ -311,6 +311,19 @@ if (document.body.classList.contains('index')){
                                 }
                     });
                        Matter.World.add(world, logofourteen);
+                    var logofifteen = Matter.Bodies.circle(percentX(75), percentY(1), 50,{
+                        density: 0.04,
+                        friction: 0.01,
+                        frictionAir: 0.00001,
+                        restitution: 0.8,
+                        render: {
+                                    strokeStyle: '#ffffff',
+                                    sprite: {
+                                        texture: './Images/logos/logo-resize-30.png',
+                                    }
+                                }
+                    });
+                       Matter.World.add(world, logofifteen);
 
                     var floor = Matter.Bodies.rectangle(percentX(50), percentY(70), percentX(100), 25, {
                         isStatic: true, //An immovable object
@@ -563,7 +576,19 @@ if (document.body.classList.contains('index')){
                                 }
                     });
                        Matter.World.add(world, logofourteen);
-
+                    var logofifthteen = Matter.Bodies.circle(percentX(75), percentY(1), 100,{
+                        density: 0.04,
+                        friction: 0.01,
+                        frictionAir: 0.00001,
+                        restitution: 0.8,
+                        render: {
+                                    strokeStyle: '#ffffff',
+                                    sprite: {
+                                        texture: './Images/logos/logos-15.png',
+                                    }
+                                }
+                    });
+                       Matter.World.add(world, logofifthteen);
                     var floor = Matter.Bodies.rectangle(percentX(50), percentY(70), percentX(100), 25, {
                         isStatic: true, //An immovable object
                         render: {
@@ -622,6 +647,7 @@ if (document.body.classList.contains('index')){
     else if (document.body.classList.contains('liquorice')) { var colour="#000000";}
     else if (document.body.classList.contains('poemscraps')) { var colour="#ff7e00";}
     else if (document.body.classList.contains('bitsy')) { var colour="#9fc5a5";}
+    else if (document.body.classList.contains('funandfunction')) { var colour="#ef9bbd";}
     else if (document.body.classList.contains('projectselect')) { var colour="#e6e6e6";}
     else if (document.body.classList.contains('department')) { var colour="#7f7ea1";}
     else if (document.body.classList.contains('gumdrop')) { var colour="#cc8f9f";}
