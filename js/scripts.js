@@ -246,7 +246,7 @@ if (document.body.classList.contains('index')){
                                 }
                     });
                        Matter.World.add(world, logonine);
-                    var logoten = Matter.Bodies.circle(percentX(95), percentY(1), 50, {
+                  /*var logoten = Matter.Bodies.circle(percentX(95), percentY(1), 50, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -258,7 +258,7 @@ if (document.body.classList.contains('index')){
                                     }
                                 }
                     });
-                       Matter.World.add(world, logoten);
+                       Matter.World.add(world, logoten);*/
                     var logoeleven = Matter.Bodies.circle(percentX(15), percentY(1), 50,{
                         density: 0.04,
                         friction: 0.01,
@@ -433,7 +433,7 @@ if (document.body.classList.contains('index')){
                                 }
                     });
                        Matter.World.add(world, logothree);
-                    var logofour = Matter.Bodies.circle(percentX(40), percentY(1), 100, {
+                    /*var logofour = Matter.Bodies.circle(percentX(40), percentY(1), 100, {
                         density: 0.04,
                         friction: 0.01,
                         frictionAir: 0.00001,
@@ -445,7 +445,7 @@ if (document.body.classList.contains('index')){
                                     }
                                 }
                     });
-                       Matter.World.add(world, logofour);
+                       Matter.World.add(world, logofour);*/
                     var logofive = Matter.Bodies.circle(percentX(50), percentY(1), 100, {
                         density: 0.04,
                         friction: 0.01,
