@@ -883,12 +883,12 @@ background: yellow;
 }
 .logorainfooter{
     position: absolute;
-    font-size: 1.75vh;
-    float:left;
-    bottom:0px;
+    bottom:0;
+    padding-left:8%;
+    font-size: 4vw;
     text-align: right;
     width:100%;
-    height:5vh;
+    height:7vh;
     background-color:#fffdf0;
     z-index: 1000;
     display:block;
@@ -896,12 +896,12 @@ background: yellow;
 
 .paintingfooter{
     position: relative;
-    font-size: 1.75vh;
-    float:left;
+    font-size: 4vw;
+    padding-left:8%;
     bottom:15px;
     text-align: right;
     width:100%;
-    height:5vh;
+    height:7vh;
     background-color:#fffdf0;
 }
 .poemfooter{
