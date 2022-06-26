@@ -217,7 +217,15 @@ img{
 .arrowlink{
     display: inline;
 }
-
+.parrow{
+        transform: translateX(-20px);
+    background-color:black;
+    color:fuchsia;
+}
+.parrowlink{
+    float:left;
+margin-top:8px;
+}
 .wordmark{
     width:250px;
     position: relative;
@@ -357,7 +365,6 @@ img{
 .contfiveimg.expand{
     visibility:visible;
 }
-
 .contsix{
     position:fixed;
     width:72%;
@@ -371,7 +378,6 @@ img{
     transition: all .2s ease;
     z-index:1;
 }
-
 .contsix.expand{
     height:91.7%;
 }
@@ -492,6 +498,12 @@ h2{
     margin-bottom:6%;
     box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
 }
+.projectimagepink{
+    display:block;
+    width:100%;
+    margin-bottom:6%;
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
+}
 .projectimage::before{
     position:absolute;
     content:' ';
@@ -564,7 +576,7 @@ h2{
     bottom:-25%;
 }
 
-.overlaybuttonone, .overlaybuttontwo{
+.overlaybuttonone, .overlaybuttontwo, .pledgelink{
     position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -762,6 +774,14 @@ h2{
     font-size:5vw;
 }
 .pledgelink{
+    background-color:#FE036A;
+    color:#FFFFFF;
+    height:205px;
+    padding:50px;
+    max-width:230px;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 2.5vh;
     clip-path: polygon(20% 4%, 32% 14%, 40% 2%, 52% 13%, 64% 3%, 73% 12%, 88% 6%, 84% 19%, 95% 28%, 83% 33%, 82% 48%, 69% 39%, 60% 48%, 49% 38%, 38% 48%, 31% 37%, 16% 45%, 15% 31%, 3% 24%, 15% 16%);
 }
 
@@ -833,14 +853,34 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,211,13,1) 88
 }
 .footertext{
     position:relative;
-    top:25%;
+    top:37%;
     font-size: 70%;
     float:left;
 }
 #footermargin{
     margin-right:8%;
 }
-
+.footertwo::before{
+    position:absolute;
+    content:' ';
+    width:100%;
+    left:0px;
+    height:3px;
+background: rgb(255,255,255);
+background: yellow;
+}
+.footertwo{
+    position: absolute;
+    bottom:0;
+    padding-left:8%;
+    font-size: 4vw;
+    text-align: right;
+    width:100%;
+    height:4.25vh;
+    background-color:#fffdf0;
+    color:white;
+    font-style:sans-serif;
+}
 .logorainfooter{
     position: absolute;
     font-size: 1.75vh;

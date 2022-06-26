@@ -506,7 +506,7 @@ h2{
 }
 
 
-.projectimage{
+.projectimage, .projectimagepink{
     display:block;
     position:relative;
     max-width: 840px;
@@ -600,7 +600,7 @@ h2{
     
 }
 
-.overlaybuttonone, .overlaybuttontwo{
+.overlaybuttonone, .overlaybuttontwo, .pledgelink{
     position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -786,6 +786,14 @@ h2{
     font-size:0.9vw;
 }
 .pledgelink{
+    background-color:#FE036A;
+    color:#FFFFFF;
+    padding:40px;
+    max-width:160px;
+    height:188px;
+    text-decoration: underline;
+    font-weight:700;
+    font-size: 0.7em;
     clip-path: polygon(20% 4%, 32% 14%, 40% 2%, 52% 13%, 64% 3%, 73% 12%, 88% 6%, 84% 19%, 95% 28%, 83% 33%, 82% 48%, 69% 39%, 60% 48%, 49% 38%, 38% 48%, 31% 37%, 16% 45%, 15% 31%, 3% 24%, 15% 16%);
 }
 
