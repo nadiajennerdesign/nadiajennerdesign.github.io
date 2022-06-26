@@ -1,103 +1,3 @@
-if (localStorage.getItem("hasCodeRunBefore") === null) {
-    document.querySelector('.disclaimerexit').addEventListener('click', function() {
-        document.querySelector('.disclaimer').classList.toggle('expand');
-        document.querySelector('.disclaimerblur').classList.toggle('expand');
-        localStorage.setItem("hasCodeRunBefore", true);
-    });
-}
-else if (document.body.classList.contains('index')){
-        document.querySelector('.disclaimer').classList.toggle('expand');
-        document.querySelector('.disclaimerblur').classList.toggle('expand');
-}
-
-if (document.body.classList.contains('index')){
-            
-
-        document.querySelector('.conttwo').addEventListener('click', function(){
-            $("div.conttwo").css('visibility', 'hidden');
-            $("div.contfour").css('visibility', 'visible');
-        });
-
-        document.querySelector('.contfour').addEventListener('click', function(){
-            $("div.contfour").css('visibility', 'hidden');
-            $("div.conttwo").css('visibility', 'visible');
-        });
-
-        document.querySelector('.contonehome').addEventListener('click', function(){
-            $("div.contfour").css('visibility', 'visible');
-            $("div.conttwo").css('visibility', 'visible');
-        });
-        
-        document.querySelector('.background').addEventListener('click', function(){
-            $("div.contfour").css('visibility', 'visible');
-            $("div.conttwo").css('visibility', 'visible');
-        });
-
-        document.querySelector('.contfive').addEventListener('click', function() {
-                  document.querySelector('.contfive').classList.toggle('expand');
-                  document.querySelector('.contfiveimg').classList.toggle('expand');
-                  document.querySelector('.contsix').classList.toggle('expand');
-            });
-
-        document.querySelector('.typefaceapologeticsicon').addEventListener('click', function() {
-            document.querySelector('.typefaceapologeticstext').classList.toggle('expand');
-            document.querySelector('.typefaceapologeticscover').classList.toggle('expand');
-        });
-        
-        var music = document.getElementById("music");
-        var isPlaying = false;
-        music.volume = 0.2;
-        function togglePlay() {
-            if (isPlaying) {
-                music.pause()
-            } else {
-                music.play();
-            }
-        };
-        music.onplaying = function() {
-            isPlaying = true;
-            $("#volumeiconmute").hide();
-            $("#volumeiconon").show();
-        };
-        music.onpause = function() {
-            isPlaying = false;
-            $("#volumeiconmute").show();
-            $("#volumeiconon").hide();
-        };
-        
-    }
-
-    if (document.body.classList.contains('poemscraps')){
-        
-        document.querySelector('.overlaybuttonone').addEventListener('click', function() {
-            document.querySelector('.overlayone').classList.toggle('expand');
-            document.querySelector('.overlaybuttonone').classList.toggle('expand');
-            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
-            document.querySelector('.poemfooter').classList.toggle('expand');
-        });
-        
-        document.querySelector('.overlaybuttontwo').addEventListener('click', function() {
-            document.querySelector('.overlaytwo').classList.toggle('expand');
-            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
-            document.querySelector('.overlaybuttonone').classList.toggle('expand');
-            document.querySelector('.poemfooter').classList.toggle('expand');
-        });
-        
-        document.querySelector('.overlayexitone').addEventListener('click', function() {
-            document.querySelector('.overlayone').classList.toggle('expand');
-            document.querySelector('.overlaybuttonone').classList.toggle('expand');
-            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
-            document.querySelector('.poemfooter').classList.toggle('expand');
-        });
-        
-        document.querySelector('.overlayexittwo').addEventListener('click', function() {
-            document.querySelector('.overlaytwo').classList.toggle('expand');
-            document.querySelector('.overlaybuttonone').classList.toggle('expand');
-            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
-            document.querySelector('.poemfooter').classList.toggle('expand');
-        });
-            
-    }
     if (document.body.classList.contains('logorain')){
         
             function myphysics(x) {
@@ -637,6 +537,108 @@ if (document.body.classList.contains('index')){
                     myphysics(x) 
                     x.addListener(myphysics)              
                 }
+
+if (localStorage.getItem("hasCodeRunBefore") === null) {
+    document.querySelector('.disclaimerexit').addEventListener('click', function() {
+        document.querySelector('.disclaimer').classList.toggle('expand');
+        document.querySelector('.disclaimerblur').classList.toggle('expand');
+        localStorage.setItem("hasCodeRunBefore", true);
+    });
+}
+else if (document.body.classList.contains('index')){
+        document.querySelector('.disclaimer').classList.toggle('expand');
+        document.querySelector('.disclaimerblur').classList.toggle('expand');
+}
+
+if (document.body.classList.contains('index')){
+            
+
+        document.querySelector('.conttwo').addEventListener('click', function(){
+            $("div.conttwo").css('visibility', 'hidden');
+            $("div.contfour").css('visibility', 'visible');
+        });
+
+        document.querySelector('.contfour').addEventListener('click', function(){
+            $("div.contfour").css('visibility', 'hidden');
+            $("div.conttwo").css('visibility', 'visible');
+        });
+
+        document.querySelector('.contonehome').addEventListener('click', function(){
+            $("div.contfour").css('visibility', 'visible');
+            $("div.conttwo").css('visibility', 'visible');
+        });
+        
+        document.querySelector('.background').addEventListener('click', function(){
+            $("div.contfour").css('visibility', 'visible');
+            $("div.conttwo").css('visibility', 'visible');
+        });
+
+        document.querySelector('.contfive').addEventListener('click', function() {
+                  document.querySelector('.contfive').classList.toggle('expand');
+                  document.querySelector('.contfiveimg').classList.toggle('expand');
+                  document.querySelector('.contsix').classList.toggle('expand');
+            });
+
+        document.querySelector('.typefaceapologeticsicon').addEventListener('click', function() {
+            document.querySelector('.typefaceapologeticstext').classList.toggle('expand');
+            document.querySelector('.typefaceapologeticscover').classList.toggle('expand');
+        });
+        
+        var music = document.getElementById("music");
+        var isPlaying = false;
+        music.volume = 0.2;
+        function togglePlay() {
+            if (isPlaying) {
+                music.pause()
+            } else {
+                music.play();
+            }
+        };
+        music.onplaying = function() {
+            isPlaying = true;
+            $("#volumeiconmute").hide();
+            $("#volumeiconon").show();
+        };
+        music.onpause = function() {
+            isPlaying = false;
+            $("#volumeiconmute").show();
+            $("#volumeiconon").hide();
+        };
+        
+    }
+
+    if (document.body.classList.contains('poemscraps')){
+        
+        document.querySelector('.overlaybuttonone').addEventListener('click', function() {
+            document.querySelector('.overlayone').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.poemfooter').classList.toggle('expand');
+        });
+        
+        document.querySelector('.overlaybuttontwo').addEventListener('click', function() {
+            document.querySelector('.overlaytwo').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.poemfooter').classList.toggle('expand');
+        });
+        
+        document.querySelector('.overlayexitone').addEventListener('click', function() {
+            document.querySelector('.overlayone').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.poemfooter').classList.toggle('expand');
+        });
+        
+        document.querySelector('.overlayexittwo').addEventListener('click', function() {
+            document.querySelector('.overlaytwo').classList.toggle('expand');
+            document.querySelector('.overlaybuttonone').classList.toggle('expand');
+            document.querySelector('.overlaybuttontwo').classList.toggle('expand');
+            document.querySelector('.poemfooter').classList.toggle('expand');
+        });
+            
+    }
+
                 
 
     if (document.body.classList.contains('paintings')) {var colour="#ef9bbd";} 
