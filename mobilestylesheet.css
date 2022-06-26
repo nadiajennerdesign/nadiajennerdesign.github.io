@@ -538,6 +538,13 @@ h2{
     font-style: oblique;
     border-radius: 0 0 25px 25px;
 }
+.captionpink{
+    font-style:normal;
+}
+.captionquote{
+    font-style:italic;
+    
+}
 .captionsilver, .captionembers, .captionrose, .captionwave{
     background-color: #FFFFFF;
 }

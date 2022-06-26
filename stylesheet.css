@@ -548,7 +548,7 @@ h2{
     height:25px;
     transform:translate(0,-23px);
     border-radius: 25px 25px 0px 0px;
-    background-color: #e6e6e6;
+    background-color: #eeeeff;
 
 }
 .projectimagesilver::before, .projectimageembers::before, .projectimagerose::before, .projectimagewave::before{
@@ -567,7 +567,14 @@ h2{
     border-radius: 0 0 25px 25px;
     transform: translateY(-10px);
     z-index: -5;
-    background-color: #e6e6e6;
+    background-color: #eeeeff;
+}
+.captionpink{
+    font-style:normal;
+}
+.captionquote{
+    font-style:italic;
+    background-color: #FFFFFF;
 }
 .captionsilver, .captionembers, .captionrose, .captionwave{
     background-color: #FFFFFF;
@@ -790,6 +797,7 @@ h2{
     color:#FFFFFF;
     padding:40px;
     max-width:160px;
+    height:188px;
     height:188px;
     text-decoration: underline;
     font-weight:700;
