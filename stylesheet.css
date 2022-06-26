@@ -856,7 +856,8 @@ h2{
 
 .footer{
     position: absolute;
-    bottom:0;
+    display:block;
+    bottom:0px;
     padding-left:0;
     font-size: 1vh;
     text-align: right;
@@ -864,7 +865,7 @@ h2{
     height:4.25vh;
     background-color:#fffdf0;
 }
-.footer::before, .logorainfooter::before, .poemfooter::before{
+.footer::before, .logorainfooter::before, .poemfooter::before, .typofooter::before{
     position:absolute;
     content:' ';
     width:100%;
@@ -928,14 +929,27 @@ background: yellow;
 }
 .poemfooter{
     position: absolute;
+    display:block;
+    bottom:0px;
     font-size: 1.75vh;
     float:left;
-    bottom:0px;
     text-align: right;
     width:100%;
     height:5vh;
     background-color:#fffdf0;
 }
+.typofooter{
+    position:absolute;
+    display:static;
+    bottom:0px;
+    font-size: 1vw;
+    padding-left:0;
+    text-align: right;
+    width:100%;
+    height:4.25vh;
+    background-color:#fffdf0;
+}
+
 .poemscraps{
     overflow:hidden;
 }
