@@ -203,6 +203,11 @@ img{
     float:left;
 margin-top:8px;
 }
+#titleimage{
+    width:400px;
+    box-shadow: none;
+    float:left;
+}
 
 .wordmark{
     width:400px;
@@ -563,12 +568,28 @@ h2{
     padding:4%;
     margin-bottom:120px;
     font-size:40%;
-    font-style: oblique;
+    font-style: oblique; 
     border-radius: 0 0 25px 25px;
     transform: translateY(-10px);
     z-index: -5;
     background-color: #eeeeff;
 }
+.captiontitle{
+    position:relative;
+    display:block;
+    margin-left:20%;
+    margin-right:20%;
+    padding:4%;
+    margin-bottom:120px;
+    font-size:40%;
+    font-style: oblique;
+    border-radius: 25px;
+    transform: translateY(-10px);
+    z-index: -5;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+
 .captionpink{
     font-style:normal;
 }

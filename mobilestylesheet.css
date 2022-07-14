@@ -226,6 +226,32 @@ img{
     float:left;
 margin-top:8px;
 }
+#titleimage{
+    width:400px;
+    box-shadow: none;
+    float:left;
+}
+.captiontitle{
+    position:relative;
+    display:block;
+    margin-left:20%;
+    margin-right:15px;
+    padding:8%;
+    margin-bottom:140px;
+    font-size:40%;
+    font-style: oblique;
+    border-radius: 0px;
+    transform: translateY(15px);
+    z-index: -5;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+@media only screen and (min-width: 474px) and (max-width: 590px){
+    .captiontitle{
+        width:260px;
+    }    
+}
+
+
 .wordmark{
     width:250px;
     position: relative;
@@ -543,6 +569,7 @@ h2{
 }
 .captionquote{
     font-style:italic;
+    padding-bottom:45px;
     
 }
 .captionsilver, .captionembers, .captionrose, .captionwave{
