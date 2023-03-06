@@ -649,6 +649,7 @@ if (document.body.classList.contains('index')){
     else if (document.body.classList.contains('liquorice')) { var colour="#000000";}
     else if (document.body.classList.contains('poemscraps')) { var colour="#ff7e00";}
     else if (document.body.classList.contains('bitsy')) { var colour="#9fc5a5";}
+    else if (document.body.classList.contains('rtb')) { var colour="#c35758";}
     else if (document.body.classList.contains('funandfunction')) { var colour="#ef9bbd";}
     else if (document.body.classList.contains('projectselect')) { var colour="#e6e6e6";}
     else if (document.body.classList.contains('department')) { var colour="#7f7ea1";}
