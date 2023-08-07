@@ -643,7 +643,7 @@ if (document.body.classList.contains('index')){
 
     if (document.body.classList.contains('paintings')) {var colour="#ef9bbd";} 
     else if (document.body.classList.contains('printtype')) { var colour="#e6e6e6";}
-    else if (document.body.classList.contains('index')) { var colour="#e6e6e6";}
+    else if (document.body.classList.contains('index')) { var colour="#ef9bbd";}
     else if (document.body.classList.contains('herve')) { var colour="#e8d36c";}
     else if (document.body.classList.contains('typology')) { var colour="#ef9bbd";}
     else if (document.body.classList.contains('liquorice')) { var colour="#000000";}
