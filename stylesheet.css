@@ -208,7 +208,9 @@ margin-top:8px;
     box-shadow: none;
     float:left;
 }
-
+mark { 
+  background-color: #8cff00;
+}
 .wordmark{
     width:400px;
     margin-left:0px;
