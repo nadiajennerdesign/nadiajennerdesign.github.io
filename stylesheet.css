@@ -203,6 +203,16 @@ img{
     right:8%;
     transform: rotate(90deg) translateY(-25px);
     box-shadow: none;
+    
+}
+.arrowimgtwo{
+    position:relative;
+    width:20px;
+    vertical-align: middle;
+    bottom:2px;
+    right:8%;
+    transform: rotate(90deg);
+    box-shadow: none;
 }
 .arrowlink{
     float:left;
@@ -457,7 +467,7 @@ h2{
     padding-right: 6%;
 }
 .htwoarrow{
-        transform: translateX(-25px);
+;
 }
 .parrow{
         transform: translateX(-20px);
@@ -675,7 +685,7 @@ h2{
     opacity:100%;
 }
 .overlayexitone, .overlayexittwo, .overlayexitthree, .overlayexitfour{
-    width:40px;
+    width:30px;
     transform: rotate(90deg);
     margin-left:30%;
     top:-82.5px;

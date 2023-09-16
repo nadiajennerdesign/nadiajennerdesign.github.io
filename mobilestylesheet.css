@@ -222,6 +222,15 @@ img{
     right:8%;
     transform: rotate(90deg);
 }
+.arrowimgtwo{
+    position:relative;
+    display:inline;
+    width:15px;
+    vertical-align: middle;
+    bottom:2px;
+    right:8%;
+    transform: rotate(90deg);
+}
 .arrowlink{
     display: inline;
 }
@@ -661,7 +670,7 @@ h2{
 }
 .overlayexitone, .overlayexittwo, .overlayexitthree, .overlayexitfour{
     position:relative;
-    width:35px;
+    width:30px;
     top:-72.5px;
     transform: rotate(90deg);
     margin-left:6%;
