@@ -229,7 +229,7 @@ img{
     vertical-align: middle;
     bottom:2px;
     right:8%;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(-6px);
 }
 .arrowlink{
     display: inline;
