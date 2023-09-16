@@ -558,11 +558,6 @@ if (document.body.classList.contains('index')){
             $("div.contfour").css('visibility', 'visible');
         });
 
-        document.querySelector('.contfour').addEventListener('click', function(){
-            $("div.contfour").css('visibility', 'hidden');
-            $("div.conttwo").css('visibility', 'visible');
-        });
-
         document.querySelector('.contonehome').addEventListener('click', function(){
             $("div.contfour").css('visibility', 'visible');
             $("div.conttwo").css('visibility', 'visible');
@@ -607,7 +602,7 @@ if (document.body.classList.contains('index')){
         
     }
 
-    if (document.body.classList.contains('poemscraps')){
+if (document.body.classList.contains('poemscraps')){
         
         document.querySelector('.overlaybuttonone').addEventListener('click', function() {
             document.querySelector('.overlayone').classList.toggle('expand');
