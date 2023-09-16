@@ -102,6 +102,14 @@ img{
     height:55%;
     background:#ffffff;
     display:block;
+    visibility:visible;
+}
+.contonehome.expand{
+    Width:100%;
+    height:55%;
+    background:#ffffff;
+    display:block;
+    visibility:hidden;
 }
 .contonename{
     Width:100%;
@@ -229,8 +237,9 @@ mark {
 .conttwo{
     position:relative;
     Width:100%;
-    height:8%;
-    bottom:8%;
+    height:6%;
+    min-height:60px;
+    bottom:10%;
     background:#f6ba0d;
     color:#c70039;
     cursor:pointer;
@@ -240,22 +249,25 @@ mark {
     display:block;
     position:relative;
     Width:100%;
-    height:8%;
+    height:6%;
+    min-height:60px;
+    bottom:3.6%;
     cursor:pointer;
 }
 .conttwoa{
     position:relative;
     Width:100%;
     height:33.3%;
+    min-height:20px;
     background:#ffd843;
     color:#c70039;
     cursor:pointer;
-
 }
 .conttwob{
     position:relative;
     Width:100%;
     height:33.3%;
+    min-height:20px;
     background:#f6ba0d;
     color:#c70039;
     cursor:pointer;
@@ -264,6 +276,7 @@ mark {
     position:relative;
     Width:100%;
     height:33.4%;
+    min-height:20px;
     background:#d19712;
     color:#c70039;
     cursor:pointer;
@@ -273,46 +286,28 @@ mark {
     position:relative;
     display: block;
     Width:100%;
-    height:8%;
+    height:6%;
     background:#fe5733;
     color:#f6ba0d;
-    bottom:8%;
-
+    bottom:10%;
 }
-
 .contfour{
     position:relative;
+    display: block;
     Width:100%;
-    height:8%;
+    height:6%;
     background:#c70039;
     color:#f6ba0d;
-    bottom:16%;
-    cursor:pointer;
-
+    bottom:10%;
 }
-.contfourback{
-    display:block;
-    position:relative;
-    Width:100%;
-    height:8%;
-    bottom:8%;
-    cursor:pointer;
-    }
 .contfoura{
     position:relative;
+    display: block;
     Width:100%;
-    height:50%;
-    background:#c70039;
-    color:#f6ba0d;
-    cursor:pointer;
-}
-.contfourb{
-    position:relative;
-    Width:100%;
-    height:50%;
+    height:6%;
     background:#a60234;
     color:#f6ba0d;
-    cursor:pointer;
+    bottom:10%;
 }
 
 .contfive{
@@ -568,7 +563,8 @@ h2{
     display:block;
     margin-left:20%;
     margin-right:20%;
-    padding:4%;
+    padding:4%;    
+    margin-top:10px;
     margin-bottom:120px;
     font-size:40%;
     font-style: oblique; 
@@ -630,8 +626,12 @@ h2{
     line-height: 50px;
     
 }
-
-.overlaybuttonone, .overlaybuttontwo, .pledgelink{
+.poemscraps.expand{
+    background-color: #000000;
+    color:#FFFFFF;
+    overflow:hidden;
+}
+.overlaybuttonone, .overlaybuttontwo, .overlaybuttonthree, .pledgelink{
     position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -641,14 +641,13 @@ h2{
     font-size: 50%;
     text-align: center;
     text-decoration: none;
-    height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top:35px;
     line-height: 50px;
     z-index: 4;
 }
-.overlaybuttonone.expand, .overlaybuttontwo.expand{
+.overlaybuttonone.expand, .overlaybuttontwo.expand, .overlaybuttonthree.expand{
     position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -658,7 +657,6 @@ h2{
     font-size: 50%;
     text-align: center;
     text-decoration: none;
-    height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top:35px;
@@ -666,21 +664,20 @@ h2{
     z-index: 4;
     display: none;
 }
-.overlayone, .overlaytwo{
+.overlayone, .overlaytwo, .overlaythree, .overlayfour{
     display:none;
     position:absolute;
     width:100%;
     opacity:100%;
-    background:#333333;
 }
-.overlayone.expand, .overlaytwo.expand{
+
+.overlayone.expand, .overlaytwo.expand, .overlaythree.expand, .overlayfour.expand{
     display:block;
     position:relative;
     width:100%;
     opacity:100%;
-    background:#ffffff;
 }
-.overlayexitone, .overlayexittwo{
+.overlayexitone, .overlayexittwo, .overlayexitthree, .overlayexitfour{
     width:40px;
     transform: rotate(90deg);
     margin-left:30%;
@@ -975,6 +972,13 @@ background: yellow;
 }
 
 .poemscraps{
+        background-color: #FFFFFF;
+    color:#000000;
+    overflow:hidden;
+}
+.poemscraps.expand{
+        background-color: #000000;
+    color:#000000;
     overflow:hidden;
 }
 .poemfooter.expand{

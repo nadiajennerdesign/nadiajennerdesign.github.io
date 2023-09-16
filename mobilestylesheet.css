@@ -98,6 +98,14 @@ img{
     height:41%;
     background:#ffffff;
     display:block;
+    visibility:visible;
+}
+.contonehome.expand{
+    Width:100%;
+    height:41%;
+    background:#ffffff;
+    display:hidden;
+    visibility:hidden;
 }
 .contonename{
     Width:100%;
@@ -115,7 +123,7 @@ img{
 }
 .contone{
     Width:100%;
-    height:41%;
+    height:40%;
     min-height: 525px;
     display:inline-block;
     margin-bottom: 40px;
@@ -165,7 +173,7 @@ img{
     transform:rotate(180deg);
     z-index:-2;
     color:#333333;
-    font-size: 25%;
+    font-size: 50%;
     cursor: pointer;
     display: none;
     overflow: auto;
@@ -182,7 +190,7 @@ img{
     transform:rotate(0deg);
     z-index:2;
     color:#333333;
-    font-size: 25%;
+    font-size: 50%;
     cursor: pointer;
     overflow: auto;
 }
@@ -251,7 +259,9 @@ margin-top:8px;
     }    
 }
 
-
+mark { 
+  background-color: #8cff00;
+}
 .wordmark{
     width:250px;
     position: relative;
@@ -262,15 +272,15 @@ margin-top:8px;
   from { left: 0; } to { left: calc(100% - 250px); }
 }
 @keyframes moveY {
-  from { top: 0; } to { top: calc(100% - 67px); }
+  from { top: 0; } to { top: calc(100% - 42px); }
 }
 
 
 .conttwo{
     position:relative;
     Width:100%;
-    height:16.7%;
-    bottom:16.7%;
+    height:12%;
+    bottom:12%;
     background:#f6ba0d;
     color:#c70039;
     cursor:pointer;
@@ -280,7 +290,8 @@ margin-top:8px;
     display:block;
     position:relative;
     Width:100%;
-    height:16.7%;
+    height:12%;
+    bottom:0%;
     cursor:pointer;
 }
 .conttwoa{
@@ -313,55 +324,37 @@ margin-top:8px;
     position:relative;
     display: block;
     Width:100%;
-    height:16.7%;
+    height:12%;
     background:#fe5733;
     color:#f6ba0d;
-    bottom:16.7%;
-
+    bottom:12%;
 }
-
 .contfour{
     position:relative;
+    display: block;
     Width:100%;
-    height:16.7%;
+    height:12%;
     background:#c70039;
     color:#f6ba0d;
-    bottom:33.4%;
-    cursor:pointer;
-
+    bottom:12%;
 }
-.contfourback{
-    display:block;
-    position:relative;
-    Width:100%;
-    height:16.7%;
-    bottom:16.7%;
-    cursor:pointer;
-    }
 .contfoura{
     position:relative;
+    display: block;
     Width:100%;
-    height:50%;
-    background:#c70039;
-    color:#f6ba0d;
-    cursor:pointer;
-}
-.contfourb{
-    position:relative;
-    Width:100%;
-    height:50%;
+    height:12%;
     background:#a60234;
     color:#f6ba0d;
-    cursor:pointer;
+    bottom:12%;
 }
 
 .contfive{
     position:relative;
     Width:100%;
-    height:8.9%;
+    height:12%;
     background:#e6e6e6;
     color:#333333;
-    bottom:33.4%;
+    bottom:12%;
     z-index:3;
     cursor:pointer;
 }
@@ -456,8 +449,9 @@ margin-top:8px;
     transform: translate(-50%, -50%);
 }
 #centremenutwo{
-    font-size: 30%;
+    font-size: 45%;
     font-weight:600;
+     text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -611,7 +605,12 @@ h2{
     bottom:-25%;
 }
 
-.overlaybuttonone, .overlaybuttontwo, .pledgelink{
+.poemscraps.expand{
+    background-color: #000000;
+    color:#FFFFFF;
+    overflow:hidden;
+}
+.overlaybuttonone, .overlaybuttontwo, .overlaybuttonthree, .pledgelink{
     position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -621,14 +620,13 @@ h2{
     font-size: 2vh;
     text-align: center;
     text-decoration: none;
-    height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top:15%;
     line-height: 50px;
     z-index: 4;
 }
-.overlaybuttonone.expand, .overlaybuttontwo.expand{
+.overlaybuttonone.expand, .overlaybuttontwo.expand, .overlaybuttonthree.expand{
     position:relative;
     border-radius: 25px;
     background-color: #e6e6e6;
@@ -638,7 +636,6 @@ h2{
     font-size: 50%;
     text-align: center;
     text-decoration: none;
-    height:50px;
     margin-left: auto;
     margin-right: auto;
     margin-top:35px;
@@ -646,21 +643,19 @@ h2{
     z-index: 4;
     display:none;
 }
-.overlayone, .overlaytwo{
+.overlayone, .overlaytwo, .overlaythree, .overlayfour{
     display:none;
     position:absolute;
     width:100%;
     opacity:100%;
-    background:#333333;
 }
-.overlayone.expand, .overlaytwo.expand{
+.overlayone.expand, .overlaytwo.expand, .overlaythree.expand, .overlayfour.expand{
     display:block;
     position:relative;
     width:100%;
     opacity:100%;
-    background:#ffffff;
 }
-.overlayexitone, .overlayexittwo{
+.overlayexitone, .overlayexittwo, .overlayexitthree, .overlayexitfour{
     position:relative;
     width:35px;
     top:-72.5px;
@@ -967,8 +962,16 @@ background: yellow;
     visibility: hidden;
 }
 .poemscraps{
+    background-color: #FFFFFF;
+    color:#000000;
     overflow:hidden;
 }
+.poemscraps.expand{
+    background-color: #000000;
+    color:#000000;
+    overflow:hidden;
+}
+
 .paintingfooter::before, .typofooter::before{
     position:absolute;
     content:' ';
