@@ -899,7 +899,7 @@ h2{
     height:9vh;
     background-color:#fffdf0;
 }
-.footer::before, .logorainfooter::before, .poemfooter::before, .a4footer::before{
+.footer::before, .logorainfooter::before, .poemfooter::before, .afourfooter::before{
     position:absolute;
     content:' ';
     width:100%;

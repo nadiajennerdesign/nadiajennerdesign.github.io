@@ -914,7 +914,7 @@ h2{
     height:4.25vh;
     background-color:#fffdf0;
 }
-.footer::before, .logorainfooter::before, .poemfooter::before, .typofooter::before, .a4footer::before{
+.footer::before, .logorainfooter::before, .poemfooter::before, .typofooter::before, .afourfooter::before{
     position:absolute;
     content:' ';
     width:100%;
