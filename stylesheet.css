@@ -131,6 +131,12 @@ img{
     min-height: 400px;
     display:block;
 }
+.contoneafour{
+    Width:100%;
+    height:41%;
+    min-height: 400px;
+    display:block;
+}
 #volumeiconon{
     display:none;
     position:absolute;
@@ -542,6 +548,19 @@ h2{
     margin-right: auto;
     box-shadow: none;
 }
+.projectimagea4{
+    display: block;
+        top:50%;
+    width:55%;
+    max-width: 1200px;
+        float:none;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:6%;
+    box-shadow: none;
+    background-color: #FFFFFF;
+}
 .noboxshadow{
         box-shadow: none;
 
@@ -559,6 +578,7 @@ h2{
     background-color: #eeeeff;
 
 }
+
 .projectimagesilver::before, .projectimageembers::before, .projectimagerose::before, .projectimagewave::before{
         background-color: #FFFFFF;
 
@@ -894,7 +914,7 @@ h2{
     height:4.25vh;
     background-color:#fffdf0;
 }
-.footer::before, .logorainfooter::before, .poemfooter::before, .typofooter::before{
+.footer::before, .logorainfooter::before, .poemfooter::before, .typofooter::before, .a4footer::before{
     position:absolute;
     content:' ';
     width:100%;
@@ -978,7 +998,16 @@ background: yellow;
     height:4.25vh;
     background-color:#fffdf0;
 }
-
+.a4footer{
+    display:static;
+    bottom:0px;
+    font-size: 1vw;
+    padding-left:0;
+    text-align: right;
+    width:100%;
+    height:4.25vh;
+    background-color:#fffdf0;
+}
 .poemscraps{
         background-color: #FFFFFF;
     color:#000000;
