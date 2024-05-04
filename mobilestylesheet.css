@@ -563,7 +563,7 @@ h2{
 .projectimagesilver, .projectimageembers, .projectimagerose, .projectimagewave{
     box-shadow: none;
 }
-.projectimagea4{
+.projectimageafour{
     display:block;
     width:100%;
     margin-bottom:6%;
@@ -971,7 +971,7 @@ background: yellow;
     height:9vh;
     background-color:#fffdf0;
 }
-.a4footer{
+.afourfooter{
     float:left;
     font-size: 4vw;
     padding-left:8%;
