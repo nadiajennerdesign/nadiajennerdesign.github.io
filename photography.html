@@ -9,56 +9,409 @@
         <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
         <link rel="manifest" href="Images/favicon/site.webmanifest">
     <meta name="description" content="A little online place for me :)">
-    <meta name="keywords" content=",Nadia, Jenner, Design, Massey, freelance, Wellington, Publication, Rainbow Creative, Porirua">
+    <meta name="keywords" content=",Nadia, Little, Design, Massey, freelance, Wellington, Publication, Rainbow Creative, Porirua, Lower Hutt, Valley Print">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="mobilestylesheet.css" rel="stylesheet" type="text/css" media="(max-width:640px)">
     <link href="stylesheet.css" rel="stylesheet" type="text/css" media="(min-width:640px)">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/matter.js"></script>
 </head>
 
-<body class='photography'>
+<body class='index'>
     <main>
-        <div id="page-container">
-            <div id="pcontent-wrap">
-                <div class="contonename">
-                    <a href="index.html"><img class="logonoborder" src="Images/logoborder.png" alt="Nadia's wordmark"></a>
-                    <h2>Photography</h2>
-                    <p class="description"> I shoot on an LX100 little mirrorless baby. These are captioned after the books they remind me of, it's like a wine pairing.<br><br></p>
-                </div>
-                <div class="projeccont">
-                    <div class="col">
-                        <div class="projectimage projectimageembers">                        
-                            <img class="noboxshadow" src="Images/photography/1P1060255.jpg" alt="Painting of glowing embers">
-                            <p class="caption captionembers"><em>The Last Man by Mary Shelly</em></p>
-                        </div>
-                        <div class="projectimage projectimagesilver">                        
-                            <img class="noboxshadow" src="Images/photography/2P1050971.jpg" alt="Painting of the morning sky">
-                            <p class="caption captionsilver"><em>The Remains of the Day by Kazuo Ishiguro </em></p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="projectimage projectimagerose">                        
-                            <img class="noboxshadow" src="Images/photography/3P1060013.jpg" alt="Painting of close up on roses">
-                            <p class="caption captionrose"><em>My Year of Rest and Relaxation by Ottessa Moshfegh</em></p>
-                        </div>
-                        <div class="projectimage projectimagewave">                        
-                            <img class="noboxshadow" src="Images/photography/4P1060236.jpg" alt="Painting of a series of sand dunes">
-                            <p class="caption captionwave"><em>The Stranger by Albert Camus</em></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="paintingfooter"><p class='footertext' id="footermargin">Music: Zorba the Greek by Herb Albert and the Tijuana Brass</p><p class="footertext">Website made by meeeeee &#169; &nbsp;<div class="footertext" id="footermargin"><p id="date"></p></div></div>
+        <div class="screen"></div>
+        <div class="disclaimer">
+            <img class="disclaimerimage" src="Images/Profileimage.png">
+            <p class="disclaimerparagraph">
+                Photographer: 
+                <a style="color: #4d4d4d; display: inline;" href="https://www.facebook.com/fionacurtismedia">Fiona Curtis Media</a><p>
+            <p class="disclaimerheader"> Greetings. Are you a lover or a hater today?<p>
+           <section class="buttonlayout"> 
+               <div class="disclaimerexit" id="disclaimerbutton"><p>I am a lover</p></div>
+                <div class="disclaimerexittwo" id="disclaimerbutton"><p>I am a hater</p></div>
+        </section>
         </div>
-    </main> 
-    <script>
-        n =  new Date();
-        y = n.getFullYear();
-        document.getElementById("date").innerHTML = y;
-    </script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+        <div class="disclaimerblur">
+            <div class="headerimage"><img class="headerimageimage" src="Images/Header%20Image.jpg"></div>
+
+            <div class="navbar">
+                <div class="logo"> <a href="index.html"><img src="Images/logo-04.svg"></a></div>
+                <div class="navbarbutton">
+                    <p><a href="Painting.html">Painting</a>&nbsp;&nbsp;&#47;&nbsp;&nbsp;<a href="Photography.html">Photography</a>&nbsp;&nbsp;&#47;&nbsp;&nbsp;<a href="Design.html">Design</a></p>
+                </div>
+                
+            </div>
+                        <div class="aboutme">Wellington based artist.<br>
+Digital and letterpress printer at Valley Print.<br>
+Master of Design First class hons. researching camp inspired design workflows.<br>
+xx Nadia Xavia Little</div>
+            <div class="sectionone">
+                <div class="bio"></div>
+                <div class="sectionimage"></div>
+            </div>
+<div class="sectiontwo">
+                <div class="gallerytitle"> <h1>Photography</h1></div>
+    
+                    <section class="carousel" id="smallcarousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    <li id="small__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/B1.jpg">
+                        <div class = "caption">Princess Bay.</div>
+                      <div class="carousel__snapper">
+                        <a href="#small__slide5"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#small__slide4"
+                           class="carousel__next">Go to next slide</a>
+                      </div>
+                    </li>
+                    <li id="small__slide4"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/B2.jpg">
+                        <div class = "caption">Mt Owen Descent.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#small__slide3"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#small__slide5"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="small__slide5"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/B3.jpg">
+                        <div class = "caption">Kaikoura.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#small__slide4"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#small__slide3"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                  </ol>
+                        
+                        
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#small__slide3"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#small__slide4"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#small__slide5"
+                           class="carousel__navigation-button">Go to slide 3</a>
+                      </li>
+                    </ol>
+                  </aside>
+                </section>
+                <section class="carousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/A1.jpg">
+                        <div class = "caption">Bird's Eye View no. 02.</div>
+                      <div class="carousel__snapper">
+                        <a href="#carousel__slide2"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2"
+                           class="carousel__next">Go to next slide</a>
+                      </div>
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/A2.jpg">
+                        <div class = "caption">View From Hind's Point.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide1"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide1"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                  </ol>
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+
+                    </ol>
+                  </aside>
+                </section>
+    
+                  <section class="carousel" id="smallcarousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    <li id="small__slide12"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/E1.jpg">
+                        <div class = "caption">Raumati no 1.</div>
+                      <div class="carousel__snapper">
+                        <a href="#small__slide15"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#small__slide13"
+                           class="carousel__next">Go to next slide</a>
+                      </div>
+                    </li>
+                    <li id="small__slide13"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/E2.jpg">
+                        <div class = "caption">Raumati no.2.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#small__slide12"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#small__slide14"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="small__slide14"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/E3%20.jpg">
+                        <div class = "caption">Princess Bay no.5.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#small__slide13"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#small__slide15"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                                          <li id="small__slide15"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/E4.jpg">
+                        <div class = "caption">View From Hind's Point.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#small__slide14"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#small__slide12"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                  </ol>
+                        
+                        
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#small__slide12"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#small__slide13"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#small__slide14"
+                           class="carousel__navigation-button">Go to slide 3</a>
+                      </li>
+                                              <li class="carousel__navigation-item">
+                        <a href="#small__slide15"
+                           class="carousel__navigation-button">Go to slide 4</a>
+                      </li>
+                    </ol>
+                  </aside>
+                </section>
+    
+                   <section class="carousel" id="mediumcarousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    <li id="carousel__slide6"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/C2.jpg">
+                        <div class = "caption">Taita Station.</div>
+                      <div class="carousel__snapper">
+                        <a href="#carousel__slide9"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide7"
+                           class="carousel__next">Go to next slide</a>
+                      </div>
+                    </li>
+                    <li id="carousel__slide7"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/C3.JPG">
+                        <div class = "caption">Brees Street no.1.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide6"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide8"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide8"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/C4.jpg">
+                        <div class = "caption">Brees Street no.2.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide7"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide9"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                                          <li id="carousel__slide9"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/C5.jpg">
+                        <div class = "caption">Also Brees Street.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide8"
+                         class="carousel__prev" >Go to previous slide</a>
+                      <a href="#carousel__slide6"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                  </ol>
+                        
+                        
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide6"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide7"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide8"
+                           class="carousel__navigation-button">Go to slide 3</a>
+                      </li>
+                                              <li class="carousel__navigation-item">
+                        <a href="#carousel__slide9"
+                           class="carousel__navigation-button">Go to slide 4</a>
+                      </li>
+                    </ol>
+                  </aside>
+                </section>
+    
+                    <section class="carousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    <li id="carousel__slide10"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/D1.jpg">
+                        <div class = "caption">Yoyogi Park</div>
+                      <div class="carousel__snapper">
+                        <a href="#carousel__slide11"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide11"
+                           class="carousel__next">Go to next slide</a>
+                      </div>
+                    </li>
+                    <li id="carousel__slide11"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/D2.jpg">
+                        <div class = "caption">Lady Norwood Rose Garden.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide10"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide10"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                  </ol>
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide10"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide11"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+
+                    </ol>
+                  </aside>
+                </section>
+    
+    
+     
+    
+                    <section class="carousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    <li id="carousel__slide16"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/F1.JPG">
+                        <div class = "caption">Willowbank Reserve</div>
+                      <div class="carousel__snapper">
+                        <a href="#carousel__slide18"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide17"
+                           class="carousel__next">Go to next slide</a>
+                      </div>
+                    </li>
+                    <li id="carousel__slide17"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/F2.jpg">
+                        <div class = "caption">Eastbourne Pilgrammage.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide16"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide18"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide18"
+                        tabindex="0"
+                        class="carousel__slide">
+                            <img src="Images/Photography/F3.jpg">
+                        <div class = "caption">Dusk.</div>
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide17"
+                         class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide16"
+                         class="carousel__next">Go to next slide</a>
+                    </li>
+                  </ol>
+                        
+                        
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide16"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide17"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide18"
+                           class="carousel__navigation-button">Go to slide 3</a>
+                      </li>
+                    </ol>
+                  </aside>
+                </section>
+    
+</div>
+            
+            
+            
+            <div class="footer">
+                <p class="footertext">Website written in 2025 by Nadia &lt;3</p>
+            </div>
+
+        </div>
+    </main>
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    document.getElementById("date").innerHTML = y;
+</script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
-</html>
-
+    </html>
